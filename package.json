@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "build:css": "tailwindcss -i ./src/styles/custom.css -o ./src/styles/output.css --minify"
+    "build:css": "npx tailwindcss -i ./src/styles/custom.css -o ./src/styles/output.css --minify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "tailwindcss": "^3.4.7"
+  }
 }
