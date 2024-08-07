@@ -4,58 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="styles/output.css" /> -->
+    <link rel="stylesheet" href="styles/custom.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      .main-wrapper {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-      @media screen and (max-width: 800px) {
-        .main-wrapper {
-          padding: 16px;
-        }
-      }
-      .custom-icon {
-        padding: 8px;
-        width: 40px;
-        height: 40px;
-      }
-      .icon-wrapper {
-        position: relative;
-        margin-bottom: 12px;
-      }
-      .left-icon {
-        transform: rotate(-15deg);
-        margin-right: 8px;
-        transition: margin-right 0.2s ease-in-out;
-      }
-      .center-icon {
-        z-index: 11;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 12px;
-        position: absolute;
-        transition: bottom 0.2s ease-in-out;
-      }
-      .right-icon {
-        transform: rotate(15deg);
-        margin-left: 8px;
-        transition: margin-left 0.2s ease-in-out;
-      }
-      .playground-area {
-        padding: 64px 0;
-      }
-      .playground-area:hover .center-icon {
-        bottom: 26px;
-      }
-      .playground-area:hover .left-icon {
-        margin-right: 24px;
-      }
-      .playground-area:hover .right-icon {
-        margin-left: 24px;
-      }
-    </style>
   </head>
   <body>
     <section class="main-wrapper flex flex-col py-8">
