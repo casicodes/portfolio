@@ -1,0 +1,12 @@
+{
+  "name": "ui-exploration",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/styles/custom.css -o ./src/styles/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
