@@ -23,6 +23,7 @@
   transform: rotate(-15deg);
   margin-right: 8px;
   transition: margin-right 0.2s ease-in-out;
+  transition: margin-left 0.3s cubic-bezier(0.3, 1.5, 0.7, 1);
 }
 
 .center-icon {
@@ -31,13 +32,14 @@
   transform: translateX(-50%);
   bottom: 12px;
   position: absolute;
-  transition: bottom 0.2s ease-in-out;
+  transition: bottom 0.2s cubic-bezier(0.3, 1.5, 0.7, 1);
 }
 
 .right-icon {
   transform: rotate(15deg);
   margin-left: 8px;
   transition: margin-left 0.2s ease-in-out;
+  transition: margin-left 0.3s cubic-bezier(0.3, 1.5, 0.7, 1);
 }
 
 .playground-area {
@@ -55,13 +57,13 @@
 .playground-area:hover .right-icon {
   margin-left: 24px;
 }
-.cta-button {
+.glowing-btn {
   position: relative;
   isolation: isolate;
   overflow: hidden;
 }
 
-.cta-button::before {
+.glowing-btn::before {
   content: "";
   position: absolute;
   inset: -60px;
@@ -77,7 +79,7 @@
   z-index: -1;
 }
 
-.cta-button::after {
+.glowing-btn::after {
   content: "";
   position: absolute;
   inset: 1px;
@@ -85,7 +87,7 @@
   z-index: -1;
   border-radius: 0.45rem;
 }
-.cta-button:hover::after {
+.glowing-btn:hover::after {
   background-color: #f3f4f6;
 }
 
@@ -96,4 +98,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+.expanding-btn {
+  transition: width 1s ease-in-out;
+  width: 48px;
+  justify-content: center;
+  overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    opacity 0.5s ease, transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.expanding-btn span {
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.expanding-btn.expanded {
+  width: auto;
+}
+
+.expanding-btn.expanded span {
+  opacity: 1;
+  width: auto;
+}
+.list {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 8px;
+}
+.button {
+  height: auto;
+  border-radius: 100%;
+  padding: 16px;
+  cursor: pointer;
+}
+.button.button-overlay {
+  color: #fff;
+}
+.clip-path-container {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  overflow: hidden;
+  transition: clip-path 0.25s ease;
+  clip-path: inset(0px 71% 0px 0% round 100px);
 }
