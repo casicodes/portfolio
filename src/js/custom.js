@@ -33,7 +33,6 @@ function updateClipPath() {
   }
 }
 
-// Create overlay buttons
 tabList.querySelectorAll(".button").forEach((button) => {
   overlayList.appendChild(createOverlayButton(button));
   button.addEventListener("click", () => setActiveTab(button.dataset.tab));
