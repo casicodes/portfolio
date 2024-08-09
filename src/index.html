@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UI Exploration | Abhishek KC</title>
+    <link rel="icon" href="images/fav.png">
     <link rel="stylesheet" href="./styles/custom.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -13,12 +14,12 @@
         <div class="playground-desc">
           <h1 class="text-lg">Tabs transition</h1>
           <p class="font-light text-gray-500">
-            Click on the tabs to view. Inspired from
+            Click on the tabs to view. Inspired by
             <a href="https://x.com/stripe" class="hover:underline">Stripe</a>.
           </p>
         </div>
         <div
-          class="playground-area rounded-2xl min-h-60 bg-white hover:bg-gray-50 border-dashed border border-gray-300 flex items-center justify-center"
+          class="playground-area rounded-2xl min-h-60 bg-white border-dashed border border-gray-300 flex items-center justify-center"
         >
           <div class="wrapper relative flex flex-col items-center w-fit">
             <ul class="list" id="tabList">
@@ -97,36 +98,37 @@
         </div>
       </div>
       <div class="playground flex flex-col gap-6">
-        <div class="playground-desc">
-          <h1 class="text-lg">Movie card</h1>
-          <p class="font-light text-slate-500">Description</p>
+        <div class="playground-desc">Expanding product card</h1>
+          <p class="font-light text-slate-500">Hover on the image to see the interaction. Images used from nike's website.</p>
         </div>
         <div
-          class="playground-area rounded-2xl min-h-60 bg-white hover:bg-gray-50 border-dashed border border-gray-300 flex items-center justify-center"
+          class="playground-area rounded-2xl min-h-60 bg-white border-dashed border border-gray-300 flex items-center justify-center"
         >
-          <div class="movie-wrapper overflow-hidden flex flex-row">
-            <div class="movie-card rounded-md">
+          <div
+            class="movie-wrapper overflow-hidden flex flex-row justify-center"
+          >
+            <div class="movie-card rounded-lg">
               <div class="movie-content">
-                <h5>Movie name</h5>
-                <p class="text-sm">2h 05m <span>·</span> 2014</p>
+                <h5 class="font-medium whitespace-nowrap overflow-hidden text-ellipsis">
+                  G.T. Hustle 3 Electric
+                </h5>
+                <p class="font-light ">$280 <span>·</span> 2 Colours</p>
               </div>
             </div>
-            <div class="movie-card rounded-md">
+            <div class="movie-card rounded-lg">
               <div class="movie-content">
-                <h5>Movie name</h5>
-                <p class="text-sm">2h 05m <span>·</span> 2014</p>
+                <h5 class="font-medium whitespace-nowrap overflow-hidden text-ellipsis">
+                  Alphafly 3 Electric
+                </h5>
+                <p class="font-light ">$390 <span>·</span> 1 Colour</p>
               </div>
             </div>
-            <div class="movie-card rounded-md">
+            <div class="movie-card rounded-lg">
               <div class="movie-content">
-                <h5>Movie name</h5>
-                <p class="text-sm">2h 05m <span>·</span> 2014</p>
-              </div>
-            </div>
-            <div class="movie-card rounded-md">
-              <div class="movie-content">
-                <h5>Movie name</h5>
-                <p class="text-sm">2h 05m <span>·</span> 2014</p>
+                <h5 class="font-medium whitespace-nowrap overflow-hidden text-ellipsis">
+                  Pegasus 41 Electric
+                </h5>
+                <p class="font-light ">$220 <span>·</span> 3 Colour</p>
               </div>
             </div>
           </div>
@@ -139,11 +141,11 @@
             Hover inside the dashed area to see it in action. Inspired by
             <a href="https://twitter.com/DescriptApp" class="hover:underline"
               >Descript App</a
-            >
+            >.
           </p>
         </div>
         <div
-          class="playground-area rounded-2xl min-h-60 bg-white hover:bg-gray-50 border-dashed border border-gray-300 flex items-center justify-center"
+          class="playground-area rounded-2xl min-h-60 bg-white border-dashed border border-gray-300 flex items-center justify-center"
         >
           <div class="text-center flex flex-col items-center gap-3 max-w-64">
             <div class="icon-wrapper relative flex">
@@ -216,7 +218,7 @@
           </p>
         </div>
         <div
-          class="playground-area rounded-2xl min-h-60 bg-white hover:bg-gray-50 border-dashed border border-gray-300 flex items-center justify-center"
+          class="playground-area rounded-2xl min-h-60 bg-white border-dashed border border-gray-300 flex items-center justify-center"
         >
           <a
             href="javascript:void(0)"

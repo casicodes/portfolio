@@ -40,3 +40,19 @@ tabList.querySelectorAll(".button").forEach((button) => {
 
 updateClipPath();
 window.addEventListener("resize", updateClipPath);
+
+const movieCards = document.querySelectorAll(".movie-wrapper .movie-card");
+
+// Array of background image URLs
+const backgroundImages = [
+  'url("images/nike1.png")',
+  'url("images/nike2.jpeg")',
+  'url("images/nike3.jpeg")',
+];
+
+// Loop through the movie cards and set different background images
+movieCards.forEach((card, index) => {
+  if (index < backgroundImages.length) {
+    card.style.backgroundImage = backgroundImages[index];
+  }
+});

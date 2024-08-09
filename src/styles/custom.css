@@ -148,25 +148,23 @@
   clip-path: inset(0px 71% 0px 0% round 100px);
 }
 .movie-wrapper {
-  max-width: 600px;
-  width: 100%;
+  width: 600px;
+  gap: 12px;
 }
 .movie-card {
-  flex: 1;
+  width: 130px;
   height: 200px;
   background-color: #f0f0f0;
-  margin: 0 5px;
-  transition: all 0.4s ease;
+  transition: all 0.4s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/images.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 .movie-card:hover {
-  flex-grow: 2;
+  width: 200px;
   cursor: pointer;
 }
 .movie-card:hover .movie-content {
@@ -181,17 +179,19 @@
   padding: 12px;
   color: #fff;
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease-in-out;
   z-index: 2;
 }
 .movie-card::after {
   content: "";
-  background: linear-gradient(0deg, rgb(0 0 0 / 80%), transparent);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   z-index: 0;
+}
+.movie-card:hover::after {
+  background: linear-gradient(0deg, rgb(0 0 0 / 80%), transparent);
 }
