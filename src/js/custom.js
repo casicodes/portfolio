@@ -56,3 +56,39 @@ movieCards.forEach((card, index) => {
     card.style.backgroundImage = backgroundImages[index];
   }
 });
+
+document
+  .querySelector(".name-icon")
+  .addEventListener("mouseenter", function () {
+    document.querySelector(".name").style.color = "#16a34a";
+  });
+
+document
+  .querySelector(".name-icon")
+  .addEventListener("mouseleave", function () {
+    document.querySelector(".name").style.color = "#cccccc";
+  });
+
+document
+  .querySelector(".website-icon")
+  .addEventListener("mouseenter", function () {
+    document.querySelector(".website").style.color = "#16a34a";
+  });
+
+document
+  .querySelector(".website-icon")
+  .addEventListener("mouseleave", function () {
+    document.querySelector(".website").style.color = "#cccccc";
+  });
+
+document
+  .querySelector(".email-icon")
+  .addEventListener("mouseenter", function () {
+    document.querySelector(".email").style.color = "#16a34a";
+  });
+
+document
+  .querySelector(".email-icon")
+  .addEventListener("mouseleave", function () {
+    document.querySelector(".email").style.color = "#cccccc";
+  });

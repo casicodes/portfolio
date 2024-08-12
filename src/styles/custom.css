@@ -206,3 +206,6 @@
     cursor: pointer;
   }
 }
+.name-icon:hover ~ .email .name {
+  color: red;
+}
