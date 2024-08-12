@@ -4,10 +4,12 @@ function TestComponent() {
   return (
     <motion.div
       className="box"
-      whileHover={{ scale: 1.2 }}
-      whileTap={{ scale: 1.1 }}
-      drag="x"
-      dragConstraints={{ left: -100, right: 100 }}
+      animate={{
+        scale: [1, 2, 2, 1, 1],
+        rotate: [0, 0, 270, 270, 0],
+        borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+      }}
+      transition={{ duration: 5 }}
     />
   );
 }
