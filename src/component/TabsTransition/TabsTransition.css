@@ -1,0 +1,48 @@
+.expanding-btn {
+  transition: width 1s ease-in-out;
+  width: 48px;
+  justify-content: center;
+  overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    opacity 0.5s ease, transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.expanding-btn span {
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.expanding-btn.expanded {
+  width: auto;
+}
+
+.expanding-btn.expanded span {
+  opacity: 1;
+  width: auto;
+}
+.list {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 8px;
+}
+.button {
+  height: auto;
+  border-radius: 100%;
+  padding: 16px;
+  cursor: pointer;
+}
+.button.button-overlay {
+  color: #fff;
+}
+.clip-path-container {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  overflow: hidden;
+  transition: clip-path 0.25s ease;
+  clip-path: inset(0px 71% 0px 0% round 100px);
+}

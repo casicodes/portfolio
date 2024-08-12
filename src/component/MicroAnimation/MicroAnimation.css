@@ -1,0 +1,89 @@
+.custom-icon {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+}
+.icon-wrapper {
+  position: relative;
+  margin-bottom: 12px;
+}
+.left-icon {
+  transform: rotate(-15deg);
+  margin-right: 8px;
+  transition: margin-right 0.2s ease-in-out;
+  transition: margin-left 0.3s cubic-bezier(0.3, 1.5, 0.7, 1);
+}
+
+.center-icon {
+  z-index: 11;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 12px;
+  position: absolute;
+  transition: bottom 0.2s cubic-bezier(0.3, 1.5, 0.7, 1);
+}
+
+.right-icon {
+  transform: rotate(15deg);
+  margin-left: 8px;
+  transition: margin-left 0.2s ease-in-out;
+  transition: margin-left 0.3s cubic-bezier(0.3, 1.5, 0.7, 1);
+}
+
+.playground-area {
+  padding: 64px 0;
+}
+
+.playground-area:hover .center-icon {
+  bottom: 26px;
+}
+
+.playground-area:hover .left-icon {
+  margin-right: 24px;
+}
+
+.playground-area:hover .right-icon {
+  margin-left: 24px;
+}
+.glowing-btn {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.glowing-btn::before {
+  content: "";
+  position: absolute;
+  inset: -60px;
+  background: conic-gradient(
+    from 0 at 50% 50%,
+    rgb(0 0 0) 0deg,
+    rgb(229 231 235) 60deg,
+    rgb(229 231 235) 310deg,
+    rgb(0 0 0) 360deg
+  );
+  border-radius: 2px;
+  animation: rotate 4s linear infinite;
+  z-index: -1;
+}
+
+.glowing-btn::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: #ffffff;
+  z-index: -1;
+  border-radius: 0.45rem;
+}
+.glowing-btn:hover::after {
+  background-color: #f3f4f6;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
