@@ -55,7 +55,7 @@ const TabsTransition = () => {
       <div className="playground-desc">
         <h1 className="text-lg">Tabs transition</h1>
         <p className="font-light text-gray-500">
-          Click on the tabs to view. Inspired by
+          Click on the tabs to see the interaction. Inspired by {""}
           <a href="https://x.com/stripe" className="hover:underline">
             Stripe
           </a>

@@ -5,7 +5,7 @@ function MicroAnimation() {
       <div className="playground-desc">
         <h1 className="text-lg">Micro animation</h1>
         <p className="font-light text-gray-500">
-          Glowing button and icon micro animation inspired by {""}
+          Glowing button and micro animation inspired by {""}
           <a href="https://twitter.com/DescriptApp" className="hover:underline">
             Descript App
           </a>
