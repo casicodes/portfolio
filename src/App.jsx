@@ -3,6 +3,7 @@ import PageTitle from "./PageTitle";
 import TabsTransition from "./component/TabsTransition/TabsTransition";
 import ExpandingCard from "./component/ExpandingCard/ExpandingCard";
 import MicroAnimation from "./component/MicroAnimation/MicroAnimation";
+import TestComponent from "./component/TestComponent/TestComponent";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <TabsTransition />
       <ExpandingCard />
       <MicroAnimation />
+      {/* <TestComponent /> */}
     </div>
   );
 }
