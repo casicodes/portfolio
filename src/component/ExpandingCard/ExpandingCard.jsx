@@ -1,20 +1,23 @@
 import "../ExpandingCard/ExpandingCard.css";
+import nike1 from "../../assets/nike1.png";
+import nike2 from "../../assets/nike2.jpeg";
+import nike3 from "../../assets/nike3.jpeg";
 function ExpandingCard() {
   const products = [
     {
-      image: "../../src/assets/nike1.png",
+      image: nike1,
       name: "G.T. Hustle 3 Electric",
       price: "$280",
       colour: "2 Colours",
     },
     {
-      image: "../../src/assets/nike2.jpeg",
+      image: nike2,
       name: "Alphafly 3 Electric",
       price: "$390",
       colour: "1 Colour",
     },
     {
-      image: "../../src/assets/nike3.jpeg",
+      image: nike3,
       name: "Pegasus 41 Electric",
       price: "$220",
       colour: "3 Colours",
