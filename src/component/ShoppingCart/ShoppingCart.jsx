@@ -61,8 +61,8 @@ const Playground = () => {
                 exit={{ scale: 0.7, opacity: 0, y: 10 }}
                 transition={{
                   type: "spring",
-                  duration: 0.1,
-                  stiffness: 300,
+                  duration: 0.01,
+                  stiffness: 360,
                   damping: 20,
                 }}
                 style={{
