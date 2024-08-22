@@ -42,13 +42,13 @@ const Playground = () => {
       <div className="playground-area rounded-2xl min-h-80 bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-center">
         <div ref={containerRef} style={{ position: "relative" }}>
           <motion.button
-            className="bg-gray-100 mx-auto z-10 relative flex w-12 h-12 rounded-full justify-center items-center"
+            className="border bg-white shadow-sm mx-auto z-10 relative flex w-12 h-12 rounded-full justify-center items-center"
             onClick={toggleCart}
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.9 }}
           >
             <motion.div layout>
-              {isOpen ? <X size={24} /> : <ShoppingCart size={24} />}
+              {isOpen ? <X size={20} /> : <ShoppingCart size={20} />}
             </motion.div>
           </motion.button>
 
@@ -74,7 +74,7 @@ const Playground = () => {
                   zIndex: 10,
                 }}
               >
-                <h3 className="font-semibold mb-4">Cart</h3>
+                <h3 className="font-mono mb-4 text-gray-500 text-sm">CART</h3>
                 <ul className="space-y-3">
                   {products.map((product) => (
                     <li

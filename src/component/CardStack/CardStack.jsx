@@ -46,7 +46,7 @@ function CardStack() {
               animate={{
                 opacity: 1,
                 scale: isStacked ? 1 - index * 0.05 : 1,
-                marginBottom: isStacked ? "-80px" : "0px",
+                marginBottom: isStacked ? "-72px" : "0px",
               }}
               transition={{
                 type: "spring",
@@ -57,10 +57,12 @@ function CardStack() {
               className="flex flex-row border p-3 rounded-lg items-end w-60 justify-between bg-white shadow"
             >
               <div>
-                <h5 className="text-lg">{activity.name}</h5>
-                <p className="text-gray-500">{activity.location}</p>
+                <h5 className="text-lg leading-6">{activity.name}</h5>
+                <p className="text-gray-500 font-mono text-sm">
+                  {activity.location}
+                </p>
               </div>
-              <p className="text-gray-500">{activity.date}</p>
+              <p className="text-gray-500 font-mono text-sm">{activity.date}</p>
             </motion.div>
           ))}
         </div>
