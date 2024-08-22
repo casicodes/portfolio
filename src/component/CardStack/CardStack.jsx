@@ -38,10 +38,13 @@ function CardStack() {
           {activities.map((activity, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, scale: isStacked ? 1 - index * 0.05 : 1 }}
+              initial={{
+                opacity: 0,
+                scale: isStacked ? 1 - index * 0.05 : 1,
+                zIndex: isStacked ? activities.length - index : 1,
+              }}
               animate={{
                 opacity: 1,
-                zIndex: isStacked ? activities.length - index : 1,
                 scale: isStacked ? 1 - index * 0.05 : 1,
                 marginBottom: isStacked ? "-80px" : "0px",
               }}
@@ -49,10 +52,9 @@ function CardStack() {
                 type: "spring",
                 duration: 0.2,
                 stiffness: 300,
-                damping: 18,
+                damping: 20,
               }}
               className="flex flex-row border p-3 rounded-lg items-end w-60 justify-between bg-white shadow"
-              // style={{ zIndex: 1 - index }}
             >
               <div>
                 <h5 className="text-lg">{activity.name}</h5>

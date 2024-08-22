@@ -5,14 +5,15 @@ function PageTitle() {
         Motion Craft
       </h1>
       <p className="font-light text-gray-500">
-        Built & designed by{" "}
+        I'm{" "}
         <a
           href="https://abhishekkc.framer.website/"
           className="hover:underline"
         >
           Abhishek
-        </a>
-        .
+        </a>{" "}
+        & this is my playground where I create micro-interactions using react,
+        tailwind & framer motion.
       </p>
     </div>
   );
