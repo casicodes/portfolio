@@ -92,7 +92,7 @@ const Playground = () => {
                   ))}
                 </ul>
                 <div className="mt-4 pt-4">
-                  <button className="w-full text-white bg-green-600 rounded-full px-3 py-3 leading-6 shadow-sm border hover:bg-green-700">
+                  <button className="w-full text-white bg-green-600 rounded-full px-3 py-3 leading-6 shadow-sm  hover:bg-green-700">
                     Continue to checkout
                   </button>
                 </div>
