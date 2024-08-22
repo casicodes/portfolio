@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="main-wrapper flex flex-col py-8 gap-20 text-left">
       <PageTitle />
-      <ShoppingCart />
-      <TabsTransition />
       <CardStack />
+      <TabsTransition />
+      <ShoppingCart />
       <ExpandingCard />
       <MicroAnimation />
     </div>

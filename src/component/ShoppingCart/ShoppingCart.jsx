@@ -44,7 +44,7 @@ const Playground = () => {
           <motion.button
             className="border bg-white shadow-sm mx-auto z-10 relative flex w-12 h-12 rounded-full justify-center items-center"
             onClick={toggleCart}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             <motion.div layout>
