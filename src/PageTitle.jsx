@@ -10,8 +10,8 @@ function PageTitle() {
         >
           Abhishek
         </a>{" "}
-        & this is my playground where I create micro-interactions using react,
-        tailwind & framer motion.
+        ,motion craft is my playground where I create micro-interactions using
+        react, tailwind & framer motion.
       </p>
     </div>
   );

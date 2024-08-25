@@ -81,7 +81,7 @@ const VinylAnimation = () => {
           <motion.img
             src={albumCover}
             alt="Album Cover"
-            className="rounded-xl :hover:pointer"
+            className="rounded-xl"
             style={{
               width: "250px",
               height: "250px",
@@ -89,7 +89,7 @@ const VinylAnimation = () => {
               margin: "20px auto 0 auto",
             }}
             animate={{
-              x: isHovered ? -235 : 0,
+              x: isHovered ? -225 : 0,
               rotate: isHovered ? -10 : 0,
               opacity: isHovered ? 0.5 : 1,
               filter: isHovered
