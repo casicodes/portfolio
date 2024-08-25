@@ -81,7 +81,7 @@ const VinylAnimation = () => {
           <motion.img
             src={albumCover}
             alt="Album Cover"
-            className="rounded-lg :hover:pointer"
+            className="rounded-xl :hover:pointer"
             style={{
               width: "250px",
               height: "250px",
