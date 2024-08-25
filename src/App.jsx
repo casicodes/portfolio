@@ -5,11 +5,13 @@ import ExpandingCard from "./component/ExpandingCard/ExpandingCard";
 import MicroAnimation from "./component/MicroAnimation/MicroAnimation";
 import CardStack from "./component/CardStack/CardStack";
 import ShoppingCart from "./component/ShoppingCart/ShoppingCart";
+import VinylAnimation from "./component/VinylAnimation/VinylAnimation";
 
 function App() {
   return (
     <div className="main-wrapper flex flex-col py-8 gap-20 text-left">
       <PageTitle />
+      <VinylAnimation />
       <TabsTransition />
       <CardStack />
       <ShoppingCart />

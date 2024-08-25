@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import { useState } from "react";
 import "../CardStack/CardStack.css";
 function CardStack() {
   const activities = [
