@@ -9,8 +9,8 @@ function PageTitle() {
           className="hover:underline"
         >
           Abhishek
-        </a>{" "}
-        ,motion craft is my playground where I create micro-interactions using
+        </a>
+        , motion craft is my playground where I create micro-interactions using
         react, tailwind & framer motion.
       </p>
     </div>
