@@ -6,6 +6,8 @@ import MicroAnimation from "./component/MicroAnimation/MicroAnimation";
 import CardStack from "./component/CardStack/CardStack";
 import ShoppingCart from "./component/ShoppingCart/ShoppingCart";
 import VinylAnimation from "./component/VinylAnimation/VinylAnimation";
+import NewTab from "./component/NewTab/NewTab";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -14,9 +16,11 @@ function App() {
       <VinylAnimation />
       <TabsTransition />
       <CardStack />
+      <NewTab />
       <ShoppingCart />
       <ExpandingCard />
       <MicroAnimation />
+      <Footer />
     </div>
   );
 }

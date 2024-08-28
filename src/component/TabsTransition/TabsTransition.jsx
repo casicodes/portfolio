@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../TabsTransition/TabsTransition.css";
 
 const TabsTransition = () => {
@@ -56,8 +56,8 @@ const TabsTransition = () => {
         <h1 className="text-lg">Tabs transition</h1>
         <p className="font-light text-gray-500">
           Click on the tabs to see the interaction. Inspired by {""}
-          <a href="https://x.com/stripe" className="hover:underline">
-            Stripe
+          <a href="https://x.com/stripe" className="underline">
+            stripe
           </a>
           .
         </p>

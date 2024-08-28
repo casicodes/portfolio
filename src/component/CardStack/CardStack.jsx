@@ -19,7 +19,7 @@ function CardStack() {
         <p className="font-light text-gray-500">
           Attempt to build the interaction that I saw on{" "}
           <a
-            className="hover:underline"
+            className="underline"
             href="https://x.com/nitishkmrk/status/1822884723485708550"
           >
             twitter
