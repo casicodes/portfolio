@@ -5,6 +5,8 @@ import ExpandingCard from "./component/ExpandingCard/ExpandingCard";
 import MicroAnimation from "./component/MicroAnimation/MicroAnimation";
 import CardStack from "./component/CardStack/CardStack";
 import ShoppingCart from "./component/ShoppingCart/ShoppingCart";
+import NewTab from "./component/NewTab/NewTab";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -12,9 +14,11 @@ function App() {
       <PageTitle />
       <TabsTransition />
       <CardStack />
+      <NewTab />
       <ShoppingCart />
       <ExpandingCard />
       <MicroAnimation />
+      <Footer />
     </div>
   );
 }
