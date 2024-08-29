@@ -26,7 +26,7 @@ function SheetAnimation() {
                   transition={{
                     duration: 0.2,
                   }}
-                  className="flex flex-col gap-4"
+                  className="flex flex-col gap-5"
                 >
                   <div>
                     <h3 className="text-xl font-semibold mb-1">
