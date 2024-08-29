@@ -6,7 +6,11 @@ function MicroAnimation() {
         <h1 className="text-lg">Micro animation</h1>
         <p className="font-light text-gray-500">
           Glowing button and micro animation inspired by {""}
-          <a href="https://twitter.com/DescriptApp" className="underline">
+          <a
+            href="https://twitter.com/DescriptApp"
+            target="_blank"
+            className="underline"
+          >
             descript app
           </a>
           .

@@ -20,6 +20,7 @@ function CardStack() {
           Attempt to build the interaction that I saw on{" "}
           <a
             className="underline"
+            target="_blank"
             href="https://x.com/nitishkmrk/status/1822884723485708550"
           >
             twitter
