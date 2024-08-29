@@ -4,7 +4,7 @@ import TabsTransition from "./component/TabsTransition/TabsTransition";
 import ExpandingCard from "./component/ExpandingCard/ExpandingCard";
 import MicroAnimation from "./component/MicroAnimation/MicroAnimation";
 import CardStack from "./component/CardStack/CardStack";
-import ShoppingCart from "./component/ShoppingCart/ShoppingCart";
+// import ShoppingCart from "./component/ShoppingCart/ShoppingCart";
 import VinylAnimation from "./component/VinylAnimation/VinylAnimation";
 import NewTab from "./component/NewTab/NewTab";
 import SheetAnimation from "./component/SheetAnimation/SheetAnimation";
@@ -19,7 +19,7 @@ function App() {
       <TabsTransition />
       <CardStack />
       <NewTab />
-      <ShoppingCart />
+      {/* <ShoppingCart /> */}
       <ExpandingCard />
       <MicroAnimation />
       <Footer />
