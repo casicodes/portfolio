@@ -29,9 +29,7 @@ function SheetAnimation() {
                   className="flex flex-col gap-5"
                 >
                   <div>
-                    <h3 className="text-xl font-semibold mb-1">
-                      Are you sure?
-                    </h3>
+                    <h3 className="text-lg font-medium mb-1">Are you sure?</h3>
                     <p className="text-gray-500 leading-5">
                       Deleting your account will permanently erase all your data
                       and settings.
