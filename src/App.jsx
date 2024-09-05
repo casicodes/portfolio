@@ -15,10 +15,10 @@ function App() {
     <div className="main-wrapper flex flex-col py-8 gap-20 text-left">
       <PageTitle />
       <SheetAnimation />
-      <VinylAnimation />
       <TabsTransition />
       <CardStack />
       <NewTab />
+      <VinylAnimation />
       {/* <ShoppingCart /> */}
       <ExpandingCard />
       <MicroAnimation />
