@@ -15,8 +15,8 @@ function App() {
     <div className="main-wrapper flex flex-col py-8 gap-20 text-left">
       <PageTitle />
       <SheetAnimation />
-      <TabsTransition />
       <CardStack />
+      <TabsTransition />
       <NewTab />
       <VinylAnimation />
       {/* <ShoppingCart /> */}
