@@ -44,7 +44,7 @@ function SheetAnimation() {
                     </motion.button>
                     <motion.button
                       layoutId="continue"
-                      className="text-white bg-red-600 rounded-full py-3 w-full leading-6 shadow-sm hover:bg-red-700"
+                      className="text-white bg-red-600 rounded-full py-3 w-full leading-6 shadow-sm hover:bg-red-700 active:bg-red-600 focus:bg-red-600"
                       onClick={() => setActive(false)}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{
