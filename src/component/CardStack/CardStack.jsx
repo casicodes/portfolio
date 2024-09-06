@@ -3,9 +3,19 @@ import { useState } from "react";
 import "../CardStack/CardStack.css";
 function CardStack() {
   const activities = [
-    { name: "Camping", location: "Lake St Claire", date: "13 Aug" },
-    { name: "Hiking", location: "Blue mountains", date: "20 Aug" },
-    { name: "Fishing", location: "Parramatta river", date: "22 Aug" },
+    {
+      icon: "⛺️",
+      name: "Camping",
+      location: "Lake St Claire",
+      date: "13 Aug",
+    },
+    { icon: "🥾", name: "Hiking", location: "Blue mountains", date: "20 Aug" },
+    {
+      icon: "🐠",
+      name: "Fishing",
+      location: "Parramatta river",
+      date: "22 Aug",
+    },
   ];
   const [isStacked, setIsStacked] = useState(true);
   const toggleStack = () => {
@@ -35,7 +45,7 @@ function CardStack() {
         >
           {isStacked ? "Show" : "Hide"}
         </button>
-        <div className="min-h-72 wrapper relative flex flex-col gap-3">
+        <div className="min-h-72 min-w-[300px] wrapper relative flex flex-col gap-3">
           {activities.map((activity, index) => (
             <motion.div
               key={index}
@@ -47,7 +57,7 @@ function CardStack() {
               animate={{
                 opacity: 1,
                 scale: isStacked ? 1 - index * 0.05 : 1,
-                marginBottom: isStacked ? "-72px" : "0px",
+                marginBottom: isStacked ? "-75px" : "0px",
               }}
               transition={{
                 type: "spring",
@@ -55,15 +65,23 @@ function CardStack() {
                 stiffness: 300,
                 damping: 20,
               }}
-              className="flex flex-row border p-3 rounded-lg items-end w-60 justify-between bg-white shadow"
+              className="border p-3 rounded-xl items-end justify-between bg-white shadow"
             >
-              <div>
-                <h5 className="text-lg leading-6">{activity.name}</h5>
-                <p className="text-gray-500 font-mono text-sm">
-                  {activity.location}
-                </p>
+              <div className="flex items-center gap-2">
+                <div className="flex justify-center bg-gray-100 items-center w-[60.34px] h-[48px] rounded-full text-2xl leading-none">
+                  {activity.icon}
+                </div>
+                <div className="flex items-end w-full justify-between">
+                  <span>
+                    <h5 className="leading-6 text-lg">{activity.name}</h5>
+                    <p className="text-gray-500  text-md">
+                      {activity.location}
+                    </p>
+                  </span>
+
+                  <p className="text-gray-500  text-md">{activity.date}</p>
+                </div>
               </div>
-              <p className="text-gray-500 font-mono text-sm">{activity.date}</p>
             </motion.div>
           ))}
         </div>

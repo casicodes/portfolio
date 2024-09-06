@@ -24,7 +24,7 @@ function SheetAnimation() {
                   initial={{ opacity: 0, y: 15 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
-                    duration: 0.2,
+                    duration: 0.25,
                   }}
                   className="flex flex-col gap-5"
                 >
@@ -52,7 +52,7 @@ function SheetAnimation() {
                         // duration: 0.14,
                         // bounce: 0,
                         type: "spring",
-                        bounce: 0.2,
+                        bounce: 0.1,
                         duration: 0.3,
                       }}
                     >
@@ -71,7 +71,7 @@ function SheetAnimation() {
                     // duration: 0.18,
                     // bounce: 0,
                     type: "spring",
-                    bounce: 0.2,
+                    bounce: 0.1,
                     duration: 0.3,
                   }}
                 >
