@@ -40,7 +40,7 @@ function CardStack() {
       </div>
       <div className="playground-area rounded-2xl bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-start">
         <button
-          className="w-16 bg-white rounded-full px-3 py-2 leading-6 shadow-sm border hover:bg-gray-100"
+          className="w-16 bg-white rounded-full px-3 py-2 leading-6 shadow-sm border hover:bg-gray-100 active:bg-white"
           onClick={toggleStack}
         >
           {isStacked ? "Show" : "Hide"}
