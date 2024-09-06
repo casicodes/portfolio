@@ -38,14 +38,14 @@ function CardStack() {
           .
         </p>
       </div>
-      <div className="playground-area rounded-2xl min-h-60 bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-start">
+      <div className="playground-area rounded-2xl bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-start">
         <button
           className="w-16 bg-white rounded-full px-3 py-2 leading-6 shadow-sm border hover:bg-gray-100"
           onClick={toggleStack}
         >
           {isStacked ? "Show" : "Hide"}
         </button>
-        <div className="min-h-72 min-w-[300px] wrapper relative flex flex-col gap-3">
+        <div className="min-h-[17rem] min-w-[300px] wrapper relative flex flex-col gap-3">
           {activities.map((activity, index) => (
             <motion.div
               key={index}
