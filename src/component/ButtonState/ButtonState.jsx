@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import house from "../../assets/house.webp";
 
-function Airbnb() {
+function ButtonState() {
   const [active, setActive] = useState(false);
   const [buttonState, setButtonState] = useState("idle");
 
@@ -36,10 +36,10 @@ function Airbnb() {
   return (
     <div className="playground flex flex-col gap-6">
       <div className="playground-desc">
-        <h1 className="text-lg">Booking interaction</h1>
+        <h1 className="text-lg">Button state interaction</h1>
         <p className="font-light text-gray-500">
           Interactive button that transitions through different states. View
-          details ">" Book now
+          details {">"} Book now
         </p>
       </div>
       <div className="playground-area rounded-2xl min-h-80 bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-center">
@@ -61,7 +61,7 @@ function Airbnb() {
                 <motion.div className="flex justify-between items-center pb-5">
                   <div>
                     <h3 className="font-bold">Foxground, Australia</h3>
-                    <p>Aud 500 per night</p>
+                    <p>Aud 1500 per night</p>
                   </div>
 
                   <button
@@ -203,4 +203,4 @@ function Airbnb() {
   );
 }
 
-export default Airbnb;
+export default ButtonState;
