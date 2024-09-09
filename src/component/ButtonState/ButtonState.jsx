@@ -75,7 +75,7 @@ function ButtonState() {
                   </button>
                 </motion.div>
                 <motion.div className="flex flex-col grow">
-                  <p className="pb-5gits">
+                  <p className="pb-5">
                     Rainforest tiny house is in one of the most beautiful
                     locations the region has to offer.
                   </p>
