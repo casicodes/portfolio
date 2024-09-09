@@ -4,7 +4,6 @@ import {
   X,
   PawPrint,
   UtensilsCrossed,
-  Bath,
   Thermometer,
   Loader2,
   Check,
