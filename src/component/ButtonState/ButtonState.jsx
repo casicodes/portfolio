@@ -9,7 +9,7 @@ import {
   Loader2,
   Check,
 } from "lucide-react";
-import house from "../../assets/house.webp";
+import house from "../../assets/house.jpg";
 
 function ButtonState() {
   const [active, setActive] = useState(false);
@@ -19,7 +19,7 @@ function ButtonState() {
     { name: "Pet Friendly", icon: <PawPrint strokeWidth={1.5} /> },
     { name: "Kitchen", icon: <UtensilsCrossed strokeWidth={1.5} /> },
     { name: "Heating", icon: <Thermometer strokeWidth={1.5} /> },
-    { name: "Hot water", icon: <Bath strokeWidth={1.5} /> },
+    // { name: "Hot water", icon: <Bath strokeWidth={1.5} /> },
   ];
 
   function handleClick() {
@@ -44,7 +44,7 @@ function ButtonState() {
       </div>
       <div className="playground-area rounded-2xl min-h-80 bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-center">
         <AnimatePresence initial={false}>
-          <motion.div className="w-[300px] rounded-xl relative">
+          <motion.div className="w-[320px] rounded-xl relative">
             <img src={house} alt="" className="rounded-xl" />
             {active ? (
               <motion.div
@@ -75,9 +75,9 @@ function ButtonState() {
                   </button>
                 </motion.div>
                 <motion.div className="flex flex-col grow">
-                  <p className="pb-5">
-                    Located creekside in a rainforest tiny house is in one of
-                    the most beautiful locations the region has to offer.
+                  <p className="pb-5gits">
+                    Rainforest tiny house is in one of the most beautiful
+                    locations the region has to offer.
                   </p>
                   <h5 className="pb-3 text-xs tracking-wider uppercase text-gray-500">
                     What this place offers
