@@ -184,7 +184,7 @@ function ButtonState() {
                     duration: 0.2,
                   },
                 }}
-                className="flex justify-between items-center absolute bottom-2 right-2 left-2 top-auto p-2 backdrop-blur-lg bg-white/60 rounded-md"
+                className="flex justify-between items-center absolute bottom-2 right-2 left-2 top-auto px-4 py-2 backdrop-blur-lg bg-white/60 rounded-md"
               >
                 <h3 className="font-bold text-sm">Foxground, Australia</h3>
                 <button
