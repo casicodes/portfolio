@@ -47,7 +47,7 @@ const OrderHistoryStep = ({ onBack }) => (
   <motion.div
     layoutId="container"
     transition={{ type: "spring", duration: 0.3, bounce: 0 }}
-    className="flex flex-col gap-4 bg-white p-4 rounded-xl w-[320px] border"
+    className="flex flex-col gap-4 bg-white p-4 rounded-xl w-[320px] shadow-sm border"
   >
     <Clock size={28} />
     <div>
@@ -90,7 +90,7 @@ const PaymentMethodsStep = ({ onBack }) => (
   <motion.div
     layoutId="container"
     transition={{ type: "spring", duration: 0.3, bounce: 0 }}
-    className="flex flex-col gap-4 bg-white p-4 rounded-xl w-[320px] border"
+    className="flex flex-col gap-4 bg-white p-4 rounded-xl w-[320px] shadow-sm border"
   >
     <CreditCard size={28} />
     <div>
@@ -133,7 +133,7 @@ const DeleteAccountStep = ({ onBack }) => (
   <motion.div
     layoutId="container"
     transition={{ type: "spring", duration: 0.3, bounce: 0 }}
-    className="flex flex-col gap-4 bg-white p-4 rounded-xl w-[320px] border"
+    className="flex flex-col gap-4 bg-white p-4 rounded-xl w-[320px] shadow-sm border"
   >
     <Trash2 size={28} />
     <div>
@@ -198,7 +198,7 @@ function MultiLevelAction() {
                 <motion.div
                   layoutId="container"
                   transition={{ type: "spring", duration: 0.3, bounce: 0 }}
-                  className="flex flex-col gap-3 bg-white p-5 rounded-xl w-[320px] border"
+                  className="flex flex-col gap-3 bg-white p-4 rounded-xl w-[320px] shadow-sm border"
                 >
                   <p className="text-xl font-medium relative">
                     Account Settings
