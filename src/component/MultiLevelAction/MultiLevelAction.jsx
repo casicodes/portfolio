@@ -71,14 +71,14 @@ const OrderHistoryStep = ({ onBack }) => (
     <div className="flex gap-3">
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-lg bg-gray-100 grow"
+        className="py-3 rounded-lg bg-gray-100 hover:bg-gray-200 grow"
         onClick={onBack}
       >
         Back
       </motion.button>
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-lg bg-blue-500 text-white grow"
+        className="py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white grow"
       >
         View Orders
       </motion.button>
@@ -114,14 +114,14 @@ const PaymentMethodsStep = ({ onBack }) => (
     <div className="flex gap-3">
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-lg bg-gray-100 grow"
+        className="py-3 rounded-lg bg-gray-100 hover:bg-gray-200 grow"
         onClick={onBack}
       >
         Back
       </motion.button>
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-lg bg-blue-500 text-white grow"
+        className="py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white grow"
       >
         Manage
       </motion.button>
@@ -157,14 +157,14 @@ const DeleteAccountStep = ({ onBack }) => (
     <div className="flex gap-3">
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-lg bg-gray-100 grow"
+        className="py-3 rounded-lg bg-gray-100 hover:bg-gray-200 grow"
         onClick={onBack}
       >
         Cancel
       </motion.button>
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-lg bg-red-500 text-white grow"
+        className="py-3 rounded-lg bg-red-500 hover:bg-red-600 text-white grow"
       >
         Delete Account
       </motion.button>
@@ -200,7 +200,7 @@ function MultiLevelAction() {
                   transition={{ type: "spring", duration: 0.3, bounce: 0 }}
                   className="flex flex-col gap-3 bg-white p-4 rounded-xl w-[320px] shadow-sm border"
                 >
-                  <p className="text-xl font-medium relative">
+                  <p className="text-lg font-medium relative">
                     Account Settings
                   </p>
                   <motion.div
