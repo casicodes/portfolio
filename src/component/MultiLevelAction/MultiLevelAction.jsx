@@ -47,11 +47,11 @@ const OrderHistoryStep = ({ onBack }) => (
   <motion.div
     layoutId="container"
     transition={{ type: "spring", duration: 0.3, bounce: 0 }}
-    className="flex flex-col gap-5 bg-white p-5 rounded-xl w-[320px] border"
+    className="flex flex-col gap-4 bg-white p-4 rounded-xl w-[320px] border"
   >
     <Clock size={28} />
     <div>
-      <p className="text-xl font-medium mb-1">Order History</p>
+      <p className="text-lg font-medium mb-1">Order History</p>
       <p className="text-gray-500 leading-5">
         View your past orders and reorder your favorites with ease.
       </p>
@@ -71,14 +71,14 @@ const OrderHistoryStep = ({ onBack }) => (
     <div className="flex gap-3">
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-xl bg-gray-100 grow"
+        className="py-3 rounded-lg bg-gray-100 grow"
         onClick={onBack}
       >
         Back
       </motion.button>
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-xl bg-blue-500 text-white grow"
+        className="py-3 rounded-lg bg-blue-500 text-white grow"
       >
         View Orders
       </motion.button>
@@ -90,11 +90,11 @@ const PaymentMethodsStep = ({ onBack }) => (
   <motion.div
     layoutId="container"
     transition={{ type: "spring", duration: 0.3, bounce: 0 }}
-    className="flex flex-col gap-5 bg-white p-5 rounded-xl w-[320px] border"
+    className="flex flex-col gap-4 bg-white p-4 rounded-xl w-[320px] border"
   >
     <CreditCard size={28} />
     <div>
-      <p className="text-xl font-medium mb-1">Payment Methods</p>
+      <p className="text-lg font-medium mb-1">Payment Methods</p>
       <p className="text-gray-500 leading-5">
         Manage your payment options for quick and easy checkout.
       </p>
@@ -114,14 +114,14 @@ const PaymentMethodsStep = ({ onBack }) => (
     <div className="flex gap-3">
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-xl bg-gray-100 grow"
+        className="py-3 rounded-lg bg-gray-100 grow"
         onClick={onBack}
       >
         Back
       </motion.button>
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-xl bg-blue-500 text-white grow"
+        className="py-3 rounded-lg bg-blue-500 text-white grow"
       >
         Manage
       </motion.button>
@@ -133,11 +133,11 @@ const DeleteAccountStep = ({ onBack }) => (
   <motion.div
     layoutId="container"
     transition={{ type: "spring", duration: 0.3, bounce: 0 }}
-    className="flex flex-col gap-5 bg-white p-5 rounded-xl w-[320px] border"
+    className="flex flex-col gap-4 bg-white p-4 rounded-xl w-[320px] border"
   >
     <Trash2 size={28} />
     <div>
-      <p className="text-xl font-medium mb-1">Delete Account</p>
+      <p className="text-lg font-medium mb-1">Delete Account</p>
       <p className="text-gray-500 leading-5">
         We're sorry to see you go. Are you sure you want to delete your account?
       </p>
@@ -157,14 +157,14 @@ const DeleteAccountStep = ({ onBack }) => (
     <div className="flex gap-3">
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-xl bg-gray-100 grow"
+        className="py-3 rounded-lg bg-gray-100 grow"
         onClick={onBack}
       >
         Cancel
       </motion.button>
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-xl bg-red-500 text-white grow"
+        className="py-3 rounded-lg bg-red-500 text-white grow"
       >
         Delete Account
       </motion.button>
@@ -219,7 +219,7 @@ function MultiLevelAction() {
                           i === 2
                             ? "bg-red-50 text-red-500 hover:bg-red-100"
                             : "bg-gray-100"
-                        } flex items-center gap-2  hover:bg-gray-200 py-3 px-3 rounded-xl `}
+                        } flex items-center gap-2  hover:bg-gray-200 py-3 px-3 rounded-lg`}
                         onClick={() => handleStepChange(el.step)}
                       >
                         {el.icon} {el.label}
