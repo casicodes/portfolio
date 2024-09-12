@@ -184,8 +184,11 @@ function MultiLevelAction() {
   return (
     <div className="playground flex flex-col gap-6">
       <div className="playground-desc">
-        <h1 className="text-lg">Section title</h1>
-        <p className="font-light text-gray-500">Section description</p>
+        <h1 className="text-lg">Multi-level action menu</h1>
+        <p className="font-light text-gray-500">
+          I found this interaction in an article by Benji so tried to recreate
+          it.{" "}
+        </p>
       </div>
       <div className="playground-area rounded-2xl h-[491px] bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-end">
         <AnimatePresence>
