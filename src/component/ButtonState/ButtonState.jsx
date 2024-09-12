@@ -1,25 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  X,
-  PawPrint,
-  UtensilsCrossed,
-  Thermometer,
-  Loader2,
-  Check,
-} from "lucide-react";
-import house from "../../assets/house.jpg";
+import { Loader2, Check } from "lucide-react";
 
 function ButtonState() {
-  const [active, setActive] = useState(false);
   const [buttonState, setButtonState] = useState("idle");
-
-  const Ameneties = [
-    { name: "Pet Friendly", icon: <PawPrint strokeWidth={1.5} /> },
-    { name: "Kitchen", icon: <UtensilsCrossed strokeWidth={1.5} /> },
-    { name: "Heating", icon: <Thermometer strokeWidth={1.5} /> },
-    // { name: "Hot water", icon: <Bath strokeWidth={1.5} /> },
-  ];
 
   function handleClick() {
     setButtonState("loading");
@@ -42,7 +26,7 @@ function ButtonState() {
       </div>
       <div className="playground-area rounded-2xl min-h-80 bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-center">
         <AnimatePresence>
-          <motion.div className="w-[320px] rounded-xl relative">
+          <motion.div className="rounded-xl relative">
             <motion.button
               className={`
                       ${
@@ -54,7 +38,7 @@ function ButtonState() {
                           ? "bg-emerald-600 text-emerald-50"
                           : "bg-neutral-800"
                       }
-                     font-semibold flex gap-1 items-center justify-center rounded-full px-3 h-[48px] leading-4 shadow-sm w-full
+                     font-semibold flex gap-1 items-center justify-center rounded-full px-5 h-[48px] leading-4 shadow-sm w-full
                       ${
                         buttonState === "loading"
                           ? "text-neutral-800"
@@ -65,20 +49,22 @@ function ButtonState() {
             >
               {buttonState === "idle" && "Book Now"}
               {buttonState === "loading" && (
-                <motion.span className="relative flex gap-1 items-center">
+                <motion.span className="relative flex gap-2 items-center">
                   <motion.span
                     initial={{
-                      x: 15,
+                      x: 20,
+                      scale: 0.85,
                     }}
                     animate={{
                       x: 0,
+                      scale: 1,
                     }}
                   >
-                    <Loader2 size={20} className="animate-spin" />
+                    <Loader2 size={24} className="animate-spin" />
                   </motion.span>
                   <motion.span
                     initial={{
-                      x: -15,
+                      x: -30,
                     }}
                     animate={{
                       x: 0,
@@ -87,10 +73,10 @@ function ButtonState() {
                       type: "spring",
                       duration: 0.3,
                       stiffness: 300,
-                      damping: 15,
+                      damping: 18,
                     }}
                   >
-                    Verifying
+                    Verifying transaction
                   </motion.span>
                 </motion.span>
               )}
@@ -98,17 +84,17 @@ function ButtonState() {
                 <motion.span className="flex gap-1 items-center">
                   <motion.span
                     initial={{
-                      x: -15,
+                      x: -30,
                     }}
                     animate={{
                       x: 0,
                     }}
                   >
-                    <Check className="inline" size={20} />
+                    <Check className="inline" size={24} />
                   </motion.span>
                   <motion.span
                     initial={{
-                      x: 15,
+                      x: 30,
                     }}
                     animate={{
                       x: 0,
@@ -117,7 +103,7 @@ function ButtonState() {
                       type: "spring",
                       duration: 0.3,
                       stiffness: 300,
-                      damping: 15,
+                      damping: 18,
                     }}
                   >
                     Booking Confirmed
