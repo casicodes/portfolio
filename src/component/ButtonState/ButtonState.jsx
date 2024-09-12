@@ -42,24 +42,26 @@ function ButtonState() {
         </p>
       </div>
       <div className="playground-area rounded-2xl min-h-80 bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-center">
-        <AnimatePresence initial={false}>
+        <AnimatePresence>
           <motion.div className="w-[320px] rounded-xl relative">
             <img src={house} alt="" className="rounded-xl" />
             {active ? (
               <motion.div
-                layout
+                layoutId="container"
                 transition={{
                   layout: {
                     type: "spring",
-                    bounce: 0.1,
-                    duration: 0.2,
+                    bounce: 0,
+                    duration: 0.3,
                   },
                 }}
-                className="flex justify-between flex-col absolute bottom-0 right-0 left-0 top-0 p-4 backdrop-blur-lg bg-white/70 rounded-xl"
+                className="flex justify-between flex-col absolute bottom-0 right-0 left-0 top-0 p-3 backdrop-blur-lg bg-white/70 rounded-xl"
               >
                 <motion.div className="flex justify-between items-center pb-5">
                   <div>
-                    <h3 className="font-bold">Foxground, Australia</h3>
+                    <motion.h3 className="font-bold" layoutId="title">
+                      Foxground, Australia
+                    </motion.h3>
                     <p>Aud 1500 per night</p>
                   </div>
 
@@ -176,23 +178,35 @@ function ButtonState() {
               </motion.div>
             ) : (
               <motion.div
-                layout
+                layoutId="container"
                 transition={{
                   layout: {
                     type: "spring",
-                    bounce: 0.1,
-                    duration: 0.2,
+                    bounce: 0,
+                    duration: 0.3,
                   },
                 }}
-                className="flex justify-between items-center absolute bottom-2 right-2 left-2 top-auto px-4 py-2 backdrop-blur-lg bg-white/60 rounded-md"
+                className="flex justify-between items-center absolute bottom-2 right-2 left-2 top-auto px-3 py-2 backdrop-blur-lg bg-white/60 rounded-md"
               >
-                <h3 className="font-bold text-sm">Foxground, Australia</h3>
-                <button
+                <motion.h3 layoutId="title" className="font-bold">
+                  Foxground, Australia
+                </motion.h3>
+                <motion.button
+                  layout
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{
+                    type: "spring",
+                    bounce: 0,
+                    duration: 0.4,
+                    delay: 0.05,
+                  }}
                   className="text-white bg-neutral-900 text-sm rounded-full px-3 py-2 leading-6 shadow-sm hover:bg-neutral-800"
                   onClick={() => setActive((prevState) => !prevState)}
                 >
                   View details
-                </button>
+                </motion.button>
               </motion.div>
             )}
           </motion.div>
