@@ -4,17 +4,17 @@ import { Utensils, Clock, CreditCard, Trash2 } from "lucide-react";
 const ctas = [
   {
     label: "View Order History",
-    icon: <Clock size={18} />,
+    icon: <Clock size={20} />,
     step: "orderHistory",
   },
   {
     label: "Manage Payment Methods",
-    icon: <CreditCard size={18} />,
+    icon: <CreditCard size={20} />,
     step: "paymentMethods",
   },
   {
     label: "Delete Account",
-    icon: <Trash2 size={18} />,
+    icon: <Trash2 size={20} />,
     step: "deleteAccount",
   },
 ];
