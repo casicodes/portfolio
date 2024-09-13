@@ -19,17 +19,6 @@ const ctas = [
   },
 ];
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.09,
-      delayChildren: 0.09,
-    },
-  },
-};
-
 const buttonVariants = {
   hidden: { opacity: 0, y: 8 },
   visible: {
@@ -71,14 +60,14 @@ const OrderHistoryStep = ({ onBack }) => (
     <div className="flex gap-3">
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-lg bg-gray-100 hover:bg-gray-200 grow"
+        className="py-3 rounded-xl bg-gray-100 hover:bg-gray-200 grow"
         onClick={onBack}
       >
         Back
       </motion.button>
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white grow"
+        className="py-3 rounded-xl bg-sky-500 hover:bg-sky-600 text-white grow"
       >
         View Orders
       </motion.button>
@@ -114,14 +103,14 @@ const PaymentMethodsStep = ({ onBack }) => (
     <div className="flex gap-3">
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-lg bg-gray-100 hover:bg-gray-200 grow"
+        className="py-3 rounded-xl bg-gray-100 hover:bg-gray-200 grow"
         onClick={onBack}
       >
         Back
       </motion.button>
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white grow"
+        className="py-3 rounded-xl bg-sky-500 hover:bg-sky-600 text-white grow"
       >
         Manage
       </motion.button>
@@ -157,14 +146,14 @@ const DeleteAccountStep = ({ onBack }) => (
     <div className="flex gap-3">
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-lg bg-gray-100 hover:bg-gray-200 grow"
+        className="py-3 rounded-xl bg-gray-100 hover:bg-gray-200 grow"
         onClick={onBack}
       >
         Cancel
       </motion.button>
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="py-3 rounded-lg bg-red-500 hover:bg-red-600 text-white grow"
+        className="py-3 rounded-xl bg-red-500 hover:bg-red-600 text-white grow"
       >
         Delete Account
       </motion.button>
@@ -184,10 +173,13 @@ function MultiLevelAction() {
   return (
     <div className="playground flex flex-col gap-6">
       <div className="playground-desc">
-        <h1 className="text-lg">Multi-level action menu</h1>
-        <p className="font-light text-gray-500">
-          I found this interaction in an article by Benji so tried to recreate
-          it.{" "}
+        <h1 className="text-lg">Tray system</h1>
+        <p className="font-light text-gray-500 text-balance">
+          I came across an interaction in an{" "}
+          <a href="https://benji.org/family-values" className="underline">
+            article
+          </a>{" "}
+          by Benji Taylor, and loved it so much that I decided to recreate it.
         </p>
       </div>
       <div className="playground-area rounded-2xl h-[491px] bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-end">
@@ -203,12 +195,8 @@ function MultiLevelAction() {
                   <p className="text-lg font-medium relative">
                     Account Settings
                   </p>
-                  <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    animate="visible"
-                    className="flex flex-col gap-3"
-                  >
+
+                  <motion.div className="flex flex-col gap-3">
                     {ctas.map((el, i) => (
                       <motion.button
                         key={i}
@@ -219,7 +207,7 @@ function MultiLevelAction() {
                           i === 2
                             ? "bg-red-50 text-red-500 hover:bg-red-100"
                             : "bg-gray-100"
-                        } flex items-center gap-2  hover:bg-gray-200 py-3 px-3 rounded-lg`}
+                        } flex items-center gap-2  hover:bg-gray-200 py-3 px-3 rounded-xl`}
                         onClick={() => handleStepChange(el.step)}
                       >
                         {el.icon} {el.label}
