@@ -158,11 +158,11 @@ function MiniPortfolio() {
                 initial={{ opacity: 0 }}
                 transition={{ delay: 0.2 }}
                 layout
-                className="px-3 pb-3 rounded-xl flex flex-col gap-3"
+                className="px-3  rounded-xl flex flex-col gap-3"
               >
                 <p className="text-gray-600">
-                  I am a designer who loves to code. I focus on the details of
-                  visual and interaction design.
+                  I am a designer who loves to code. I focus on visual details
+                  and interaction design.
                 </p>
                 <p className="text-gray-600">
                   I believe a focus on craftsmanship and attention to detail
