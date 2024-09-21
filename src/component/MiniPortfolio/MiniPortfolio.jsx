@@ -46,7 +46,10 @@ function MiniPortfolio() {
     <div className="playground flex flex-col gap-6">
       <div className="playground-desc">
         <h1 className="text-lg">Mini Portfolio</h1>
-        <p className="font-light text-gray-500">Section description</p>
+        <p className="font-light text-gray-500">
+          Inspired by Apple’s Dynamic Island for its innovative use of minimal
+          real estate to display the most important information.
+        </p>
       </div>
       <div className="playground-area rounded-2xl min-h-[500px] bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-center">
         <AnimatePresence mode="wait">
