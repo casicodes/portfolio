@@ -10,6 +10,10 @@ import {
   BriefcaseBusiness,
   ArrowDownToLine,
 } from "lucide-react";
+import p1 from "../../assets/3-1.png";
+import p2 from "../../assets/2-3.png";
+import p3 from "../../assets/1-1.png";
+
 function MiniPortfolio() {
   const [state, setState] = useState({
     expand: false,
@@ -89,7 +93,7 @@ function MiniPortfolio() {
                 >
                   <div className="flex gap-1.5 py-2 rounded-xl text-lg leading-snug hover:cursor-pointer hover:bg-gray-50 hover:px-2 transition-all duration-300">
                     <img
-                      src="https://i.ibb.co/yy3J0Zd/3-1.png"
+                      src={p1}
                       alt=""
                       className="w-[80px] object-cover rounded-lg"
                     />
@@ -101,7 +105,7 @@ function MiniPortfolio() {
                   </div>
                   <div className="flex gap-1.5 py-2 rounded-xl text-lg leading-snug hover:cursor-pointer hover:bg-gray-50 hover:px-2 transition-all duration-300">
                     <img
-                      src="https://i.ibb.co/N3jyTvZ/2-3.png"
+                      src={p2}
                       alt=""
                       className="w-[80px] object-cover rounded-lg"
                     />
@@ -114,7 +118,7 @@ function MiniPortfolio() {
 
                   <div className="flex gap-1.5 py-2 rounded-xl text-lg leading-snug hover:cursor-pointer hover:bg-gray-50 hover:px-2 transition-all duration-300">
                     <img
-                      src="https://i.ibb.co/m6N23Zz/1-1.png"
+                      src={p3}
                       alt=""
                       className="w-[80px] object-cover rounded-lg"
                     />
