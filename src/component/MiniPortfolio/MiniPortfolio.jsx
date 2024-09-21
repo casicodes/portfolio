@@ -69,7 +69,7 @@ function MiniPortfolio() {
             >
               <motion.div
                 style={{ borderRadius: 24 }}
-                className="flex flex-col justify-between gap-3 border rounded-3xl shadow p-2 relative w-[320px]"
+                className="flex flex-col justify-between gap-3 border shadow p-3 relative w-[320px]"
               >
                 <motion.button
                   layout
@@ -91,7 +91,7 @@ function MiniPortfolio() {
                   layout
                   className="flex flex-col rounded-xl "
                 >
-                  <div className="flex gap-1.5 py-2 rounded-xl text-lg leading-snug hover:cursor-pointer hover:bg-gray-50 hover:px-2 transition-all duration-300">
+                  <div className="flex gap-1.5 py-1.5 rounded-xl text-lg leading-snug hover:cursor-pointer hover:bg-gray-50 hover:px-2 transition-all duration-300">
                     <img
                       src={p1}
                       alt=""
@@ -103,7 +103,7 @@ function MiniPortfolio() {
                       </h3>
                     </div>
                   </div>
-                  <div className="flex gap-1.5 py-2 rounded-xl text-lg leading-snug hover:cursor-pointer hover:bg-gray-50 hover:px-2 transition-all duration-300">
+                  <div className="flex gap-1.5 py-1.5 rounded-xl text-lg leading-snug hover:cursor-pointer hover:bg-gray-50 hover:px-2 transition-all duration-300">
                     <img
                       src={p2}
                       alt=""
@@ -116,7 +116,7 @@ function MiniPortfolio() {
                     </div>
                   </div>
 
-                  <div className="flex gap-1.5 py-2 rounded-xl text-lg leading-snug hover:cursor-pointer hover:bg-gray-50 hover:px-2 transition-all duration-300">
+                  <div className="flex gap-1.5 py-1.5 rounded-xl text-lg leading-snug hover:cursor-pointer hover:bg-gray-50 hover:px-2 transition-all duration-300">
                     <img
                       src={p3}
                       alt=""
@@ -134,7 +134,7 @@ function MiniPortfolio() {
           ) : state.info ? (
             <motion.div
               layoutId="dynamic"
-              className="info-container flex flex-col justify-between gap-3 border rounded-3xl shadow p-2 relative w-[320px]"
+              className="info-container flex flex-col justify-between gap-3 border shadow p-3 relative w-[320px]"
               // initial={{ opacity: 0, y: 20 }}
               // animate={{ opacity: 1, y: 0 }}
               // exit={{ opacity: 0, y: 20 }}
@@ -158,7 +158,7 @@ function MiniPortfolio() {
                 initial={{ opacity: 0 }}
                 transition={{ delay: 0.2 }}
                 layout
-                className="px-3  rounded-xl flex flex-col gap-3"
+                className="pb-1 rounded-xl flex flex-col gap-3"
               >
                 <p className="text-gray-600">
                   I am a designer who loves to code. I focus on visual details
