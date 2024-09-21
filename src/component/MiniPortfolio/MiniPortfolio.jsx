@@ -158,23 +158,41 @@ function MiniPortfolio() {
                 initial={{ opacity: 0 }}
                 transition={{ delay: 0.2 }}
                 layout
-                className="px-3 rounded-xl flex flex-col gap-3"
+                className="px-3 pb-3 rounded-xl flex flex-col gap-3"
               >
                 <p className="text-gray-600">
-                  I got into design through my uncle’s influence and pursued it
-                  alongside software engineering.
+                  I am a designer who loves to code. I focus on the details of
+                  visual and interaction design.
                 </p>
                 <p className="text-gray-600">
-                  Now, I’m a Product Designer at AMR, learning JavaScript and
-                  React to transition into a design engineer role. I’m also a
-                  Manchester United fan and 8-ball pool enthusiast.
+                  I believe a focus on craftsmanship and attention to detail
+                  will be the key differentiators that set products and
+                  experiences apart.
                 </p>
-                <motion.button
-                  whileTap={buttonTap}
-                  className="mt-1.5 py-3 px-3 bg-gray-100 font-medium rounded-full w-full flex gap-2 items-center justify-center"
-                >
-                  <ArrowDownToLine size={20} /> Download Resume
-                </motion.button>
+
+                <div className="flex gap-2">
+                  <motion.a
+                    whileTap={buttonTap}
+                    href="https://www.linkedin.com/in/abhishekkc/"
+                    className="bg-gray-100 text-center grow p-2 rounded-full hover:bg-gray-200"
+                  >
+                    LinkedIn
+                  </motion.a>
+                  <motion.a
+                    whileTap={buttonTap}
+                    href="https://www.linkedin.com/in/abhishekkc/"
+                    className="bg-gray-100 text-center grow p-2 rounded-full hover:bg-gray-200"
+                  >
+                    Twitter
+                  </motion.a>
+                  <motion.a
+                    whileTap={buttonTap}
+                    href="https://www.linkedin.com/in/abhishekkc/"
+                    className="bg-gray-100 text-center grow p-2 rounded-full hover:bg-gray-200"
+                  >
+                    Resume
+                  </motion.a>
+                </div>
               </motion.div>
             </motion.div>
           ) : (
