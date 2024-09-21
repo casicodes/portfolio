@@ -170,7 +170,7 @@ function MiniPortfolio() {
                   experiences apart.
                 </p>
 
-                <div className="flex gap-2">
+                <div className="flex gap-2 mt-2">
                   <motion.a
                     whileTap={buttonTap}
                     href="https://www.linkedin.com/in/abhishekkc/"
