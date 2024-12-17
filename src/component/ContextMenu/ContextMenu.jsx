@@ -35,7 +35,9 @@ function ContextMenu() {
   return (
     <div className="playground flex flex-col gap-6">
       <div className="playground-desc">
-        <h1 className="text-lg">Expandable context menu</h1>
+        <h1 className="text-gray-800 font-medium text-lg">
+          Expandable context menu
+        </h1>
         <p className="font-light text-gray-500">
           Attempt to re-create the interaction I saw on{" "}
           <a

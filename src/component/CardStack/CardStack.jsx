@@ -25,7 +25,7 @@ function CardStack() {
   return (
     <div className="playground flex flex-col gap-6">
       <div className="playground-desc">
-        <h1 className="text-lg">Card stack</h1>
+        <h1 className="text-gray-800 font-medium text-lg">Card stack</h1>
         <p className="font-light text-gray-500">
           Attempt to build the interaction that I saw on{" "}
           <a

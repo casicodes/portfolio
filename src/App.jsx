@@ -1,33 +1,18 @@
 import "./App.css";
-import PageTitle from "./PageTitle";
-import ContextMenu from "./component/ContextMenu/ContextMenu";
-import MiniPortfolio from "./component/MiniPortfolio/MiniPortfolio";
-import TabsTransition from "./component/TabsTransition/TabsTransition";
-import MicroAnimation from "./component/MicroAnimation/MicroAnimation";
-import CardStack from "./component/CardStack/CardStack";
-import MultiLevelAction from "./component/MultiLevelAction/MultiLevelAction";
-import Chatgpt from "./component/Chatgpt/Chatgpt";
-import NewTab from "./component/NewTab/NewTab";
-import SheetAnimation from "./component/SheetAnimation/SheetAnimation";
-import Footer from "./Footer";
+import Home from "./pages/home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Motion from "./pages/motion";
 
 function App() {
   return (
-    <div className="main-wrapper flex flex-col py-8 gap-20 text-left">
-      <PageTitle />
-      <MiniPortfolio />
-      <Chatgpt />
-      <ContextMenu />
-      <MultiLevelAction />
-      <SheetAnimation />
-      <CardStack />
-      <TabsTransition />
-      <NewTab />
-      {/* <VinylAnimation /> */}
-      {/* <ExpandingCard /> */}
-      <MicroAnimation />
-      <Footer />
-    </div>
+    <main className="py-24 max-w-[550px] mx-auto">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/motion" element={<Motion />} />
+        </Routes>
+      </Router>
+    </main>
   );
 }
 

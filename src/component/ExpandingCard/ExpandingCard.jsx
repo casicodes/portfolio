@@ -27,7 +27,9 @@ function ExpandingCard() {
   return (
     <div className="playground flex flex-col gap-6">
       <div className="playground-desc">
-        <h1 className="text-lg">Expanding product card</h1>
+        <h1 className="text-gray-800 font-medium text-lg">
+          Expanding product card
+        </h1>
         <p className="font-light text-slate-500">
           Hover on the image to see the interaction. Images used from nike's
           website.

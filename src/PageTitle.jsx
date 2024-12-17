@@ -1,14 +1,17 @@
+import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 function PageTitle() {
   return (
-    <div>
-      <h1 className="text-4xl font-bold tracking-tight mb-4">Motion Craft</h1>
-      <p className="text-gray-500 text-lg text-balance">
-        I'm{" "}
-        {/* <a href="https://abhishekkc.framer.website/" className="underline">
-          Abhishek
-        </a> */}
-        Abhishek, motion craft is my playground where I create
-        micro-interactions using react, tailwind & framer motion.
+    <div className="flex flex-col gap-y-2">
+      <Link
+        to="/"
+        className="w-[36px] h-[36px] flex items-center justify-center bg-gray-100 rounded-full"
+      >
+        <ArrowLeft size={20} />
+      </Link>
+      <p className="text-gray-500 text-lg font-light text-balance">
+        Motion library, where I create micro-interactions using react, tailwind
+        & framer motion.
       </p>
     </div>
   );

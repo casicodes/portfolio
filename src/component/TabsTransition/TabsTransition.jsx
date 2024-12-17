@@ -6,7 +6,7 @@ function TabsTransition() {
   return (
     <div className="playground flex flex-col gap-6">
       <div className="playground-desc">
-        <h1 className="text-lg">Tabs transition</h1>
+        <h1 className="text-gray-800 font-medium text-lg">Tabs transition</h1>
         <p className="font-light text-gray-500">
           Click on the tabs to see the interaction.
         </p>

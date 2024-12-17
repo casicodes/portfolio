@@ -49,14 +49,14 @@ function MiniPortfolio() {
   return (
     <div className="playground flex flex-col gap-6">
       <div className="playground-desc">
-        <h1 className="text-lg">Mini Portfolio</h1>
+        <h1 className="text-gray-800 font-medium text-lg">Mini Portfolio</h1>
         <p className="font-light text-gray-500 text-balance">
           Inspired by Apple’s Dynamic Island for its use of minimal real estate
           to display the most important information.
         </p>
       </div>
       <div className="playground-area rounded-2xl min-h-[500px] bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-center">
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait" initial={false}>
           {state.work ? (
             <motion.div
               layoutId="dynamic"
@@ -207,7 +207,7 @@ function MiniPortfolio() {
               className="relative flex justify-between items-center gap-1 min-w-[320px] border shadow p-2"
               style={{ borderRadius: 32, height: 66 }}
             >
-              <AnimatePresence mode="wait">
+              <AnimatePresence mode="wait" initial={false}>
                 {state.expand ? (
                   <motion.button
                     layout
@@ -295,7 +295,7 @@ function MiniPortfolio() {
                 )}
               </AnimatePresence>
 
-              <AnimatePresence mode="wait">
+              <AnimatePresence mode="wait" initial={false}>
                 {state.expand ? (
                   <motion.button
                     layout

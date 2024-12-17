@@ -30,7 +30,9 @@ function Chatgpt() {
   return (
     <div className="playground flex flex-col gap-6">
       <div className="playground-desc">
-        <h1 className="text-lg">Chatgpt interaction</h1>
+        <h1 className="text-gray-800 font-medium text-lg">
+          Chatgpt interaction
+        </h1>
         <p className="font-light text-gray-500">
           Had some fun recreating this micro-interaction I noticed on the
           Chatgpt mobile app.

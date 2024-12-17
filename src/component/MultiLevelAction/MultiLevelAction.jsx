@@ -173,7 +173,7 @@ function MultiLevelAction() {
   return (
     <div className="playground flex flex-col gap-6">
       <div className="playground-desc">
-        <h1 className="text-lg">Tray system</h1>
+        <h1 className="text-gray-800 font-medium text-lg">Tray system</h1>
         <p className="font-light text-gray-500 text-balance">
           I came across an interaction in an{" "}
           <a href="https://benji.org/family-values" className="underline">

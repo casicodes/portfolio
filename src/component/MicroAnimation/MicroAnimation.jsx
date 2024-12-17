@@ -3,7 +3,7 @@ function MicroAnimation() {
   return (
     <div className="playground flex flex-col gap-6">
       <div className="playground-desc">
-        <h1 className="text-lg">Micro animation</h1>
+        <h1 className="text-gray-800 font-medium text-lg">Micro animation</h1>
         <p className="font-light text-gray-500">
           Glowing button and micro animation inspired by {""}
           <a
