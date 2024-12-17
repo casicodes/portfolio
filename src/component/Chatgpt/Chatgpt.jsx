@@ -34,8 +34,7 @@ function Chatgpt() {
           Chatgpt interaction
         </h1>
         <p className="font-light text-gray-500">
-          Had some fun recreating this micro-interaction I noticed on the
-          Chatgpt mobile app.
+          Recreating this micro-interaction I noticed on the Chatgpt mobile app.
         </p>
       </div>
       <div className="playground-area rounded-2xl min-h-80 bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-center">
