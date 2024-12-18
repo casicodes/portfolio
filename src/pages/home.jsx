@@ -11,7 +11,10 @@ function Home() {
           </p>
           <p className="text-gray-500 leading-6">
             Currently at{" "}
-            <a href="#" className="text-gray-800">
+            <a
+              href="https://www.lyrebirdhealth.com/au"
+              className="text-gray-800"
+            >
               Lyrebird Health
             </a>
             , shaping the future of healthcare by crafting experiences that
