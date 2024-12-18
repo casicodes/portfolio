@@ -94,7 +94,7 @@ function Home() {
               Linkedin
             </a>
             <a
-              href="https://drive.google.com/file/d/1gql-u0tsQSIhNFqfIU1rWQK5E-LhAiHh/view"
+              href="https://drive.google.com/file/d/1wfwL_ZnZ_bUw_1md56VBe8LyUcnBCWIR/view?usp=sharing"
               className="md:text-lg font-medium"
             >
               Resume
