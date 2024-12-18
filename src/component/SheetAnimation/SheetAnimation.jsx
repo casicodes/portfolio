@@ -4,12 +4,10 @@ import { useState } from "react";
 function SheetAnimation() {
   const [isActive, setActive] = useState(false);
   return (
-    <div className="playground flex flex-col gap-6">
-      <div className="playground-desc">
-        <h1 className="text-gray-800 font-medium text-lg">
-          Confirmation interaction
-        </h1>
-        <p className="font-light text-gray-500">
+    <div className="playground flex flex-col gap-8">
+      <div className="playground-desc flex flex-col gap-1">
+        <h1 className="text-gray-800">Confirmation interaction</h1>
+        <p className="text-gray-500">
           Click on the delete to see the interaction. Inspired by{" "}
           <a className="underline" target="_blank" href="https://x.com/family">
             family

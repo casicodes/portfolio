@@ -171,10 +171,10 @@ function MultiLevelAction() {
     setCurrentStep(null);
   };
   return (
-    <div className="playground flex flex-col gap-6">
-      <div className="playground-desc">
-        <h1 className="text-gray-800 font-medium text-lg">Tray system</h1>
-        <p className="font-light text-gray-500 text-balance">
+    <div className="playground flex flex-col gap-8">
+      <div className="playground-desc flex flex-col gap-1">
+        <h1 className="text-gray-800">Tray system</h1>
+        <p className="text-gray-500">
           I came across an interaction in an{" "}
           <a href="https://benji.org/family-values" className="underline">
             article

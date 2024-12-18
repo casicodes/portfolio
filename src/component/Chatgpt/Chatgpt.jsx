@@ -28,12 +28,10 @@ function Chatgpt() {
     exit: { x: 20, opacity: 0, scale: 0.6 },
   };
   return (
-    <div className="playground flex flex-col gap-6">
-      <div className="playground-desc">
-        <h1 className="text-gray-800 font-medium text-lg">
-          Chatgpt interaction
-        </h1>
-        <p className="font-light text-gray-500">
+    <div className="playground flex flex-col gap-8">
+      <div className="playground-desc flex flex-col gap-1">
+        <h1 className="text-gray-800">Chatgpt interaction</h1>
+        <p className="text-gray-500">
           Recreating this micro-interaction I noticed on the Chatgpt mobile app.
         </p>
       </div>

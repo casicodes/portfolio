@@ -1,10 +1,10 @@
 import "../MicroAnimation/MicroAnimation.css";
 function MicroAnimation() {
   return (
-    <div className="playground flex flex-col gap-6">
-      <div className="playground-desc">
-        <h1 className="text-gray-800 font-medium text-lg">Micro animation</h1>
-        <p className="font-light text-gray-500">
+    <div className="playground flex flex-col gap-8">
+      <div className="playground-desc flex flex-col gap-1">
+        <h1 className="text-gray-800">Micro animation</h1>
+        <p className="text-gray-500">
           Glowing button and micro animation inspired by {""}
           <a
             href="https://twitter.com/DescriptApp"

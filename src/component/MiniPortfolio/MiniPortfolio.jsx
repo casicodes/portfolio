@@ -47,10 +47,10 @@ function MiniPortfolio() {
   };
 
   return (
-    <div className="playground flex flex-col gap-6">
-      <div className="playground-desc">
-        <h1 className="text-gray-800 font-medium text-lg">Mini Portfolio</h1>
-        <p className="font-light text-gray-500 text-balance">
+    <div className="playground flex flex-col gap-8">
+      <div className="playground-desc flex flex-col gap-1">
+        <h1 className="text-gray-800">Mini Portfolio</h1>
+        <p className="text-gray-500">
           Inspired by Apple’s Dynamic Island for its use of minimal real estate.
         </p>
       </div>

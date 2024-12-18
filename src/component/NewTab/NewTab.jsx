@@ -10,12 +10,10 @@ function NewTab() {
     setKey((prevKey) => prevKey + 1);
   }
   return (
-    <div className="playground flex flex-col gap-6">
-      <div className="playground-desc">
-        <h1 className="text-gray-800 font-medium text-lg">
-          New tab interaction
-        </h1>
-        <p className="font-light text-gray-500">
+    <div className="playground flex flex-col gap-8">
+      <div className="playground-desc flex flex-col gap-1">
+        <h1 className="text-gray-800">New tab interaction</h1>
+        <p className="text-gray-500">
           Inspired by{" "}
           <a
             href="https://www.designspells.com/spells/the-tab-counter-turns-into-a-smiley-after-exceeding-99-tabs-in-chrome"

@@ -9,10 +9,6 @@ function PageTitle() {
       >
         <ArrowLeft size={20} />
       </Link>
-      <p className="text-gray-500 text-lg font-light text-balance">
-        Motion library, where I create micro-interactions using react, tailwind
-        & framer motion.
-      </p>
     </div>
   );
 }

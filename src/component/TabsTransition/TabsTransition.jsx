@@ -4,10 +4,10 @@ function TabsTransition() {
   const tabs = ["List", "Board", "Calendar", "Files"];
   const [selected, setSelected] = useState("List");
   return (
-    <div className="playground flex flex-col gap-6">
-      <div className="playground-desc">
-        <h1 className="text-gray-800 font-medium text-lg">Tabs transition</h1>
-        <p className="font-light text-gray-500">
+    <div className="playground flex flex-col gap-8">
+      <div className="playground-desc flex flex-col gap-1">
+        <h1 className="text-gray-800">Tabs transition</h1>
+        <p className="text-gray-500">
           Click on the tabs to see the interaction.
         </p>
       </div>

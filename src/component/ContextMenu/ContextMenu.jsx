@@ -33,12 +33,10 @@ function ContextMenu() {
     { label: "Invite", icon: <UserPlus size={20} className="text-gray-400" /> },
   ];
   return (
-    <div className="playground flex flex-col gap-6">
-      <div className="playground-desc">
-        <h1 className="text-gray-800 font-medium text-lg">
-          Expandable context menu
-        </h1>
-        <p className="font-light text-gray-500">
+    <div className="playground flex flex-col gap-8">
+      <div className="playground-desc flex flex-col gap-1">
+        <h1 className="text-gray-800">Expandable context menu</h1>
+        <p className="text-gray-500">
           Attempt to re-create the interaction I saw on{" "}
           <a
             href="https://twitter.com/nitishkmrk/status/1833031583739289953"
