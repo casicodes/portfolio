@@ -10,11 +10,12 @@ function Home() {
             development and micro-interactions to make products feel alive.
           </p>
           <p className="text-gray-500 leading-6">
-            Currently designing at{" "}
+            Currently at{" "}
             <a href="#" className="text-gray-800">
               Lyrebird Health
             </a>
-            , helping shape the future of healthcare space.
+            , shaping the future of healthcare by crafting experiences that
+            improve clinical workflows.
           </p>
         </div>
 
