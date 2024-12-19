@@ -38,7 +38,7 @@ function Home() {
             <div className="flex flex-col gap-1">
               <h3 className="md:text-lg capitalize font-medium">
                 Micro-interactions for web{" "}
-                <span className="text-gray-400 font-normal">· 2023</span>{" "}
+                <span className="text-gray-400 font-normal">· 2024</span>{" "}
               </h3>
               <div className="flex flex-col gap-4">
                 <p className="md:text-lg text-gray-500 font-normal">
@@ -91,7 +91,7 @@ function Home() {
           <p className="font-mono text-xs text-gray-400 uppercase tracking-widest">
             Connect
           </p>
-          <div className="flex gap-6">
+          <div className="flex gap-8">
             {/* <a href="" className="text-gray-500 text-lg">
        About
      </a> */}
