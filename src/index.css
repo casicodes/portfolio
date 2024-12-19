@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-header a {
+header a,
+footer a {
   text-decoration-line: underline;
   text-decoration-color: #e5e7eb;
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
 }
-header a:hover {
+header a:hover,
+footer a:hover {
   text-decoration-color: #d1d5db;
   color: #1f2937;
 }
