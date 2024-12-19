@@ -53,7 +53,7 @@ function Home() {
               <span className="text-gray-400 font-normal">
                 · 2023 ·{" "}
                 <span className="text-sm leading-none bg-emerald-50 text-emerald-600 font-mono py-1 px-2 rounded-full">
-                  Coming soon
+                  WIP
                 </span>
               </span>{" "}
             </h3>
@@ -71,7 +71,7 @@ function Home() {
               <span className="text-gray-400 font-normal">
                 · 2022 ·{" "}
                 <span className="text-sm leading-none bg-emerald-50 text-emerald-600 font-mono py-1 px-2 rounded-full">
-                  Coming soon
+                  WIP
                 </span>
               </span>{" "}
             </h3>
