@@ -34,7 +34,7 @@ function Home() {
         <div className="flex flex-col gap-8">
           <Link
             to="/motion"
-            className="md:text-lg capitalize font-medium flex flex-col gap-2 p-4 bg-white shadow-sm border border-gray-100 rounded-2xl hover:shadow-md transition-shadow duration-300"
+            className="md:text-lg flex flex-col gap-2 p-4 bg-white shadow-sm border border-gray-100 rounded-2xl hover:shadow-md transition-shadow duration-300"
           >
             <div className="flex flex-col gap-2">
               <div className="flex items-center justify-between">
