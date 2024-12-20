@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Micro-interactions for web",
+    "year": "2024",
+    "status": "Release",
+    "description": "Micro-interactions using react, tailwind & framer motion.",
+    "link": "/motion"
+  },
+  {
+    "title": "AMR e-commerce mobile app",
+    "year": "2023",
+    "status": "WIP",
+    "description": "Designed and shipped the first version of mobile app that led to 161k first week sales, improved retention (+82.5%), reduced abandonment rate (-11.5%) and service tickets (-50%)."
+  },
+  {
+    "title": "AMR e-commerce website",
+    "year": "2022",
+    "status": "WIP",
+    "description": "Helped migrate, redesign and develop e-commerce platform, resulting in increase in sales (+200%), average order value (+77%) and improved workflow for the team."
+  }
+]

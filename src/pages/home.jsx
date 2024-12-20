@@ -1,6 +1,25 @@
 import { Link } from "react-router-dom";
 import { MoveUpRight } from "lucide-react";
+import projects from "../data/projects.json";
+import { motion, AnimatePresence } from "framer-motion";
 function Home() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2, // Stagger effect
+      },
+    },
+  };
+  const cardVariants = {
+    hidden: { opacity: 0, y: 12 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.4, ease: "easeOut" },
+    },
+  };
   return (
     <div className="flex flex-col gap-y-[80px]">
       <header>
@@ -32,7 +51,7 @@ function Home() {
           Projects
         </p>
         <div className="flex flex-col gap-8">
-          <Link
+          {/* <Link
             to="/motion"
             className="md:text-lg flex flex-col gap-2 p-4 bg-white shadow-sm border border-gray-100 rounded-2xl hover:shadow-md transition-shadow duration-300"
           >
@@ -87,7 +106,60 @@ function Home() {
                 (+77%) and improved workflow for the team.
               </p>
             </div>
-          </div>
+          </div> */}
+          <AnimatePresence>
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              animate="visible"
+              className="flex flex-col gap-y-8"
+            >
+              {projects.map((project) => (
+                <motion.div key={project.title} variants={cardVariants}>
+                  {project.status === "WIP" ? (
+                    <div className="flex flex-col gap-2 p-4 bg-white shadow-sm border border-gray-100 rounded-2xl">
+                      <div className="flex items-center justify-between">
+                        <h3 className="md:text-lg capitalize font-medium">
+                          {project.title}{" "}
+                          <span className="text-gray-400 font-normal">
+                            · {project.year}
+                          </span>
+                        </h3>
+                        <span className="text-sm leading-none bg-emerald-50 text-emerald-600 font-mono py-1 px-2 rounded-full">
+                          {project.status}
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-4">
+                        <p className="md:text-lg text-gray-500">
+                          {project.description}
+                        </p>
+                      </div>
+                    </div>
+                  ) : (
+                    <Link
+                      to={project.link}
+                      className="md:text-lg flex flex-col gap-2 p-4 bg-white shadow-sm border border-gray-100 rounded-2xl hover:shadow-md transition-shadow duration-300"
+                    >
+                      <div className="flex items-center justify-between">
+                        <h3 className="md:text-lg capitalize font-medium">
+                          {project.title}{" "}
+                          <span className="text-gray-400 font-normal">
+                            · {project.year}
+                          </span>
+                        </h3>
+                        <MoveUpRight size={20} className="text-gray-400" />
+                      </div>
+                      <div className="flex flex-col gap-4">
+                        <p className="md:text-lg text-gray-500 font-normal">
+                          {project.description}
+                        </p>
+                      </div>
+                    </Link>
+                  )}
+                </motion.div>
+              ))}
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
 
