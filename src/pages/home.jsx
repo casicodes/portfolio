@@ -51,62 +51,6 @@ function Home() {
           Projects
         </p>
         <div className="flex flex-col gap-8">
-          {/* <Link
-            to="/motion"
-            className="md:text-lg flex flex-col gap-2 p-4 bg-white shadow-sm border border-gray-100 rounded-2xl hover:shadow-md transition-shadow duration-300"
-          >
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center justify-between">
-                <h3 className="md:text-lg capitalize font-medium">
-                  Micro-interactions for web{" "}
-                  <span className="text-gray-400 font-normal">· 2024</span>{" "}
-                </h3>
-                <MoveUpRight size={20} className="text-gray-400" />
-              </div>
-
-              <div className="flex flex-col gap-4">
-                <p className="md:text-lg text-gray-500 font-normal">
-                  Micro-interactions using react, tailwind & framer motion.
-                </p>
-              </div>
-            </div>
-          </Link>
-          <div className="flex flex-col gap-2 p-4 bg-white shadow-sm border border-gray-100 rounded-2xl">
-            <div className="flex items-center justify-between">
-              <h3 className="md:text-lg capitalize font-medium">
-                AMR e-commerce mobile app{" "}
-                <span className="text-gray-400 font-normal">· 2023</span>{" "}
-              </h3>
-              <span className="text-sm leading-none bg-emerald-50 text-emerald-600 font-mono py-1 px-2 rounded-full">
-                WIP
-              </span>
-            </div>
-            <div className="flex flex-col gap-4">
-              <p className="md:text-lg text-gray-500">
-                Designed and shipped the first version of mobile app that led to
-                161k first week sales, improved retention (+82.5%), reduced
-                abandonment rate (-11.5%) and service tickets (-50%).
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2 p-4 bg-white shadow-sm border border-gray-100 rounded-2xl">
-            <div className="flex items-center justify-between">
-              <h3 className="md:text-lg capitalize font-medium">
-                AMR e-commerce website{" "}
-                <span className="text-gray-400 font-normal">· 2022</span>{" "}
-              </h3>
-              <span className="text-sm leading-none bg-emerald-50 text-emerald-600 font-mono py-1 px-2 rounded-full">
-                WIP
-              </span>
-            </div>
-            <div className="flex flex-col gap-4">
-              <p className="md:text-lg text-gray-500">
-                Helped migrate, redesign and develop e-commerce platform,
-                resulting in increase in sales (+200%), average order value
-                (+77%) and improved workflow for the team.
-              </p>
-            </div>
-          </div> */}
           <AnimatePresence>
             <motion.div
               variants={containerVariants}

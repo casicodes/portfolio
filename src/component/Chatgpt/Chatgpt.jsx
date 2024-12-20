@@ -30,12 +30,14 @@ function Chatgpt() {
   return (
     <div className="playground flex flex-col gap-8">
       <div className="playground-desc flex flex-col gap-1">
-        <h1 className="text-gray-800">Chatgpt interaction</h1>
+        <h1 className="md:text-lg capitalize font-medium">
+          Chatgpt interaction
+        </h1>
         <p className="text-gray-500">
           Recreating this micro-interaction I noticed on the Chatgpt mobile app.
         </p>
       </div>
-      <div className="playground-area rounded-2xl min-h-80 bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-center">
+      <div className="playground-area rounded-2xl min-h-80 bg-white border-dashed border border-gray-200 gap-4 flex flex-col items-center justify-center">
         <div className="flex items-center gap-4 justify-between w-[320px]">
           <div>
             {" "}
@@ -46,7 +48,7 @@ function Chatgpt() {
                   animate={{ x: 0, opacity: 1 }}
                   exit={{ x: 20, opacity: 0 }}
                   transition={{ duration: 0.4, type: "spring", delay: 0.1 }}
-                  className="bg-gray-200 text-gray-600 h-[44px] w-[44px] rounded-full flex items-center justify-center"
+                  className="bg-gray-100 text-gray-600 h-[44px] w-[44px] rounded-full flex items-center justify-center"
                   onClick={() => setMedia(false)}
                 >
                   <Plus strokeWidth={3} size={20} />

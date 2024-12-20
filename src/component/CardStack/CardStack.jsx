@@ -25,7 +25,9 @@ function CardStack() {
   return (
     <div className="playground flex flex-col gap-8">
       <div className="playground-desc flex flex-col gap-1">
-        <h1 className="text-gray-800">Card stack</h1>
+        <h1 className="text-gray-800 md:text-lg capitalize font-medium">
+          Card stack
+        </h1>
         <p className="text-gray-500">
           Attempt to build the interaction that I saw on{" "}
           <a
@@ -38,7 +40,7 @@ function CardStack() {
           .
         </p>
       </div>
-      <div className="playground-area rounded-2xl bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-start">
+      <div className="playground-area rounded-2xl bg-white border-dashed border border-gray-200 gap-4 flex flex-col items-center justify-start">
         <button
           className="w-16 bg-white rounded-full px-3 py-2 leading-6 shadow-sm border hover:bg-gray-100 active:bg-white focus:bg-white text-center"
           onClick={toggleStack}
@@ -68,15 +70,13 @@ function CardStack() {
               className="border p-3 rounded-xl items-end justify-between bg-white shadow"
             >
               <div className="flex items-center gap-2">
-                <div className="flex justify-center bg-gray-100 items-center w-[60.34px] h-[48px] rounded-full text-2xl leading-none">
+                <div className="flex justify-center bg-gray-100 items-center w-[54.31px] h-[44px] rounded-full text-2xl leading-none">
                   {activity.icon}
                 </div>
                 <div className="flex items-end w-full justify-between">
                   <span>
-                    <h5 className="leading-6 text-lg">{activity.name}</h5>
-                    <p className="text-gray-500  text-md">
-                      {activity.location}
-                    </p>
+                    <h5 className="font-medium">{activity.name}</h5>
+                    <p className="text-gray-500 ">{activity.location}</p>
                   </span>
 
                   <p className="text-gray-500  text-md">{activity.date}</p>

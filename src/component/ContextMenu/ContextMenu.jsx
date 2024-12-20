@@ -35,7 +35,9 @@ function ContextMenu() {
   return (
     <div className="playground flex flex-col gap-8">
       <div className="playground-desc flex flex-col gap-1">
-        <h1 className="text-gray-800">Expandable context menu</h1>
+        <h1 className="text-gray-800 md:text-lg capitalize font-medium">
+          Expandable context menu
+        </h1>
         <p className="text-gray-500">
           Attempt to re-create the interaction I saw on{" "}
           <a
@@ -47,7 +49,7 @@ function ContextMenu() {
           .
         </p>
       </div>
-      <div className="playground-area rounded-2xl min-h-[368px] bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-center">
+      <div className="playground-area rounded-2xl min-h-[368px] bg-white border-dashed border border-gray-200 gap-4 flex flex-col items-center justify-center">
         <AnimatePresence>
           {active ? (
             <motion.div

@@ -49,12 +49,14 @@ function MiniPortfolio() {
   return (
     <div className="playground flex flex-col gap-8">
       <div className="playground-desc flex flex-col gap-1">
-        <h1 className="text-gray-800">Mini Portfolio</h1>
+        <h1 className="text-gray-800 md:text-lg capitalize font-medium">
+          Mini Portfolio
+        </h1>
         <p className="text-gray-500">
           Inspired by Apple’s Dynamic Island for its use of minimal real estate.
         </p>
       </div>
-      <div className="playground-area rounded-2xl min-h-[500px] bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-center">
+      <div className="playground-area rounded-2xl min-h-[500px] bg-white border-dashed border border-gray-200 gap-4 flex flex-col items-center justify-center">
         <AnimatePresence mode="wait" initial={false}>
           {state.work ? (
             <motion.div
@@ -78,10 +80,10 @@ function MiniPortfolio() {
                   exit={{ x: -10, opacity: 0 }}
                   whileTap={buttonTap}
                   transition={mainTransition}
-                  className="w-[48px] h-[48px] flex items-center justify-center bg-gray-100 rounded-full"
+                  className="w-[44px] h-[44px] flex items-center justify-center bg-gray-100 rounded-full"
                   onClick={handleBack}
                 >
-                  <ChevronLeft />
+                  <ChevronLeft size={20} />
                 </motion.button>
                 <motion.div
                   animate={{ opacity: 1 }}
@@ -147,10 +149,10 @@ function MiniPortfolio() {
                 exit={{ x: -10, opacity: 0 }}
                 whileTap={buttonTap}
                 transition={mainTransition}
-                className="w-[48px] h-[48px] flex items-center justify-center bg-gray-100 rounded-full"
+                className="w-[44px] h-[44px] flex items-center justify-center bg-gray-100 rounded-full"
                 onClick={handleBack}
               >
-                <ArrowLeft size={24} />
+                <ArrowLeft size={20} />
               </motion.button>
               <motion.div
                 animate={{ opacity: 1 }}
@@ -216,10 +218,10 @@ function MiniPortfolio() {
                     exit={{ x: -10, opacity: 0 }}
                     whileTap={buttonTap}
                     // transition={fadeTransition}
-                    className="w-[48px] h-[48px] flex items-center justify-center bg-gray-100 rounded-full"
+                    className="w-[44px] h-[44px] flex items-center justify-center bg-gray-100 rounded-full"
                     onClick={toggleExpand}
                   >
-                    <ChevronLeft />
+                    <ChevronLeft size={20} />
                   </motion.button>
                 ) : (
                   <motion.div
@@ -232,7 +234,7 @@ function MiniPortfolio() {
                   >
                     <img
                       className="rounded-full border object-cover"
-                      style={{ width: "48px", height: "48px" }}
+                      style={{ width: "44px", height: "44px" }}
                       src="https://framerusercontent.com/images/jowDUfnbCLGOBu7PEdfAyzD3o.png"
                       alt=""
                     />
@@ -243,9 +245,7 @@ function MiniPortfolio() {
                       <p className="text-xl font-medium leading-tight">
                         Abhishek KC
                       </p>
-                      <h1 className="text-gray-500 leading-tight">
-                        Software Designer
-                      </h1>
+                      <h1 className="text-gray-500">Software Designer</h1>
                     </motion.div>
                   </motion.div>
                 )}
@@ -264,30 +264,30 @@ function MiniPortfolio() {
                     <div className="p-0.5">
                       <motion.button
                         // transition={mainTransition}
-                        className="h-[48px] w-[48px] flex items-center justify-center bg-gray-100 rounded-full"
+                        className="h-[44px] w-[44px] flex items-center justify-center bg-gray-100 rounded-full"
                         onClick={goToWork}
                         whileTap={buttonTap}
                       >
-                        <BriefcaseBusiness />
+                        <BriefcaseBusiness size={20} />
                       </motion.button>
                     </div>
                     <div className="p-0.5">
                       <motion.button
                         // transition={mainTransition}
-                        className="w-[48px] h-[48px] flex items-center justify-center bg-gray-100 rounded-full"
+                        className="w-[44px] h-[44px] flex items-center justify-center bg-gray-100 rounded-full"
                         whileTap={buttonTap}
                       >
-                        <Github />
+                        <Github size={20} />
                       </motion.button>
                     </div>
 
                     <div className="p-0.5">
                       <motion.button
                         // transition={mainTransition}
-                        className="w-[48px] h-[48px] flex items-center justify-center bg-gray-100 rounded-full"
+                        className="w-[44px] h-[44px] flex items-center justify-center bg-gray-100 rounded-full"
                         whileTap={buttonTap}
                       >
-                        <Mail />
+                        <Mail size={20} />
                       </motion.button>
                     </div>
                   </motion.div>
@@ -304,10 +304,10 @@ function MiniPortfolio() {
                     exit={{ x: 10, opacity: 0 }}
                     whileTap={buttonTap}
                     transition={{ duration: 0.2 }}
-                    className="w-[48px] h-[48px] flex items-center justify-center bg-gray-100 rounded-full"
+                    className="w-[44px] h-[44px] flex items-center justify-center bg-gray-100 rounded-full"
                     onClick={goToInfo}
                   >
-                    <Info />
+                    <Info size={20} />
                   </motion.button>
                 ) : (
                   <motion.button
@@ -318,10 +318,10 @@ function MiniPortfolio() {
                     exit={{ x: 10, opacity: 0 }}
                     whileTap={buttonTap}
                     transition={{ duration: 0.2 }}
-                    className="w-[48px] h-[48px] flex items-center justify-center bg-gray-100 rounded-full"
+                    className="w-[44px] h-[44px] flex items-center justify-center bg-gray-100 rounded-full"
                     onClick={toggleExpand}
                   >
-                    <ChevronRight />
+                    <ChevronRight size={20} />
                   </motion.button>
                 )}
               </AnimatePresence>

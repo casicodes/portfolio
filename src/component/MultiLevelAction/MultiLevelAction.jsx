@@ -3,17 +3,17 @@ import { useState } from "react";
 import { Utensils, Clock, CreditCard, Trash2 } from "lucide-react";
 const ctas = [
   {
-    label: "View Order History",
+    label: "View order history",
     icon: <Clock size={20} />,
     step: "orderHistory",
   },
   {
-    label: "Manage Payment Methods",
+    label: "Manage payment methods",
     icon: <CreditCard size={20} />,
     step: "paymentMethods",
   },
   {
-    label: "Delete Account",
+    label: "Delete account",
     icon: <Trash2 size={20} />,
     step: "deleteAccount",
   },
@@ -36,7 +36,7 @@ const OrderHistoryStep = ({ onBack }) => (
   <motion.div
     layoutId="container"
     transition={{ type: "spring", duration: 0.3, bounce: 0 }}
-    className="flex flex-col gap-4 bg-white p-4 rounded-xl w-[320px] shadow-sm border"
+    className="flex flex-col gap-4 bg-white p-4 rounded-2xl w-[320px] shadow-sm border"
   >
     <Clock size={28} />
     <div>
@@ -69,7 +69,7 @@ const OrderHistoryStep = ({ onBack }) => (
         whileTap={{ scale: 0.95 }}
         className="py-3 rounded-xl bg-sky-500 hover:bg-sky-600 text-white grow"
       >
-        View Orders
+        View orders
       </motion.button>
     </div>
   </motion.div>
@@ -79,7 +79,7 @@ const PaymentMethodsStep = ({ onBack }) => (
   <motion.div
     layoutId="container"
     transition={{ type: "spring", duration: 0.3, bounce: 0 }}
-    className="flex flex-col gap-4 bg-white p-4 rounded-xl w-[320px] shadow-sm border"
+    className="flex flex-col gap-4 bg-white p-4 rounded-2xl w-[320px] shadow-sm border"
   >
     <CreditCard size={28} />
     <div>
@@ -122,7 +122,7 @@ const DeleteAccountStep = ({ onBack }) => (
   <motion.div
     layoutId="container"
     transition={{ type: "spring", duration: 0.3, bounce: 0 }}
-    className="flex flex-col gap-4 bg-white p-4 rounded-xl w-[320px] shadow-sm border"
+    className="flex flex-col gap-4 bg-white p-4 rounded-2xl w-[320px] shadow-sm border"
   >
     <Trash2 size={28} />
     <div>
@@ -155,7 +155,7 @@ const DeleteAccountStep = ({ onBack }) => (
         whileTap={{ scale: 0.95 }}
         className="py-3 rounded-xl bg-red-500 hover:bg-red-600 text-white grow"
       >
-        Delete Account
+        Delete account
       </motion.button>
     </div>
   </motion.div>
@@ -173,7 +173,9 @@ function MultiLevelAction() {
   return (
     <div className="playground flex flex-col gap-8">
       <div className="playground-desc flex flex-col gap-1">
-        <h1 className="text-gray-800">Tray system</h1>
+        <h1 className="text-gray-800 md:text-lg capitalize font-medium">
+          Tray system
+        </h1>
         <p className="text-gray-500">
           I came across an interaction in an{" "}
           <a href="https://benji.org/family-values" className="underline">
@@ -182,7 +184,7 @@ function MultiLevelAction() {
           by Benji Taylor, and loved it so much that I decided to recreate it.
         </p>
       </div>
-      <div className="playground-area rounded-2xl h-[491px] bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-end">
+      <div className="playground-area rounded-2xl h-[491px] bg-white border-dashed border border-gray-200 gap-4 flex flex-col items-center justify-end">
         <AnimatePresence>
           <div className="flex items-center justify-center">
             <div className="flex items-end ">
@@ -190,7 +192,7 @@ function MultiLevelAction() {
                 <motion.div
                   layoutId="container"
                   transition={{ type: "spring", duration: 0.3, bounce: 0 }}
-                  className="flex flex-col gap-3 bg-white p-4 rounded-xl w-[320px] shadow-sm border"
+                  className="flex flex-col gap-3 bg-white p-4 rounded-2xl w-[320px] shadow-sm border"
                 >
                   <p className="text-lg font-medium relative">
                     Account Settings

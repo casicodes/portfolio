@@ -6,12 +6,14 @@ function TabsTransition() {
   return (
     <div className="playground flex flex-col gap-8">
       <div className="playground-desc flex flex-col gap-1">
-        <h1 className="text-gray-800">Tabs transition</h1>
+        <h1 className="text-gray-800 md:text-lg capitalize font-medium">
+          Tabs transition
+        </h1>
         <p className="text-gray-500">
           Click on the tabs to see the interaction.
         </p>
       </div>
-      <div className="playground-area rounded-2xl min-h-80 bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-center">
+      <div className="playground-area rounded-2xl min-h-80 bg-white border-dashed border border-gray-200 gap-4 flex flex-col items-center justify-center">
         <motion.ul layout>
           {tabs.map((tab) => (
             <motion.li

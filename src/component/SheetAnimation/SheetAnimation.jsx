@@ -6,7 +6,9 @@ function SheetAnimation() {
   return (
     <div className="playground flex flex-col gap-8">
       <div className="playground-desc flex flex-col gap-1">
-        <h1 className="text-gray-800">Confirmation interaction</h1>
+        <h1 className="text-gray-800 md:text-lg capitalize font-medium">
+          Confirmation interaction
+        </h1>
         <p className="text-gray-500">
           Click on the delete to see the interaction. Inspired by{" "}
           <a className="underline" target="_blank" href="https://x.com/family">
@@ -15,7 +17,7 @@ function SheetAnimation() {
           .
         </p>
       </div>
-      <div className="playground-area rounded-2xl min-h-80 bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-center">
+      <div className="playground-area rounded-2xl min-h-80 bg-white border-dashed border border-gray-200 gap-4 flex flex-col items-center justify-center">
         <div className="w-[320px] h-[140px] flex flex-col justify-end space-between">
           <AnimatePresence mode="wait">
             <motion.div layout key={isActive ? "active" : "inactive"}>

@@ -3,7 +3,9 @@ function MicroAnimation() {
   return (
     <div className="playground flex flex-col gap-8">
       <div className="playground-desc flex flex-col gap-1">
-        <h1 className="text-gray-800">Micro animation</h1>
+        <h1 className="text-gray-800 md:text-lg capitalize font-medium">
+          Micro animation
+        </h1>
         <p className="text-gray-500">
           Glowing button and micro animation inspired by {""}
           <a
@@ -16,7 +18,7 @@ function MicroAnimation() {
           .
         </p>
       </div>
-      <div className="playground-area rounded-2xl min-h-60 bg-white border-dashed border border-gray-300 flex items-center justify-center">
+      <div className="playground-area rounded-2xl min-h-60 bg-white border-dashed border border-gray-200 flex items-center justify-center">
         <div className="text-center flex flex-col items-center gap-3 max-w-64">
           <div className="icon-wrapper relative flex">
             <svg

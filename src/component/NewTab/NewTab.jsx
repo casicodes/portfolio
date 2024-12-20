@@ -12,7 +12,9 @@ function NewTab() {
   return (
     <div className="playground flex flex-col gap-8">
       <div className="playground-desc flex flex-col gap-1">
-        <h1 className="text-gray-800">New tab interaction</h1>
+        <h1 className="text-gray-800 md:text-lg capitalize font-medium">
+          New tab interaction
+        </h1>
         <p className="text-gray-500">
           Inspired by{" "}
           <a
@@ -24,7 +26,7 @@ function NewTab() {
           new tab interaction on clicking plus button.
         </p>
       </div>
-      <div className="playground-area rounded-2xl min-h-80 bg-white border-dashed border border-gray-300 gap-4 flex flex-col items-center justify-center">
+      <div className="playground-area rounded-2xl min-h-80 bg-white border-dashed border border-gray-200 gap-4 flex flex-col items-center justify-center">
         <div className="flex justify-between w-[300px] items-center">
           <button className="text-gray-400 w-8 h-8 flex items-center justify-center">
             <ArrowLeft />
