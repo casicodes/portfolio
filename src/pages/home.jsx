@@ -46,8 +46,8 @@ function Home() {
           </div>
         </div>
       </header>
-      <div className="flex flex-col gap-4">
-        <p className="font-mono text-xs text-gray-400 uppercase tracking-widest">
+      <div className="flex flex-col gap-6">
+        <p className="text-xs text-gray-400 uppercase tracking-widest">
           Projects
         </p>
         <div className="flex flex-col gap-8">
@@ -61,7 +61,7 @@ function Home() {
               {projects.map((project) => (
                 <motion.div key={project.title} variants={cardVariants}>
                   {project.status === "WIP" ? (
-                    <div className="flex flex-col gap-2 p-4 bg-white shadow-sm border border-gray-100 rounded-2xl">
+                    <div className="flex flex-col gap-2 p-4 md:p-6 bg-white shadow-sm border border-gray-100 rounded-2xl">
                       <div className="flex items-center justify-between">
                         <h3 className="md:text-lg capitalize font-medium">
                           {project.title}{" "}
@@ -69,9 +69,10 @@ function Home() {
                             · {project.year}
                           </span>
                         </h3>
-                        <span className="text-sm leading-none bg-emerald-50 text-emerald-600 font-mono py-1 px-2 rounded-full">
+                        <div className="rounded-full tracking-widest bg-amber-50 text-amber-600 px-2 gap-1.5 h-6 flex items-center text-sm font-medium">
+                          <div className="small-circle"></div>
                           {project.status}
-                        </span>
+                        </div>
                       </div>
                       <div className="flex flex-col gap-4">
                         <p className="md:text-lg text-gray-500">
@@ -82,7 +83,7 @@ function Home() {
                   ) : (
                     <Link
                       to={project.link}
-                      className="md:text-lg flex flex-col gap-2 p-4 bg-white shadow-sm border border-gray-100 rounded-2xl hover:shadow-md transition-shadow duration-300"
+                      className="md:text-lg flex flex-col gap-2 p-4 md:p-6 bg-white shadow-sm border border-gray-100 rounded-2xl hover:shadow-md transition-shadow duration-300"
                     >
                       <div className="flex items-center justify-between">
                         <h3 className="md:text-lg capitalize font-medium">
@@ -108,8 +109,8 @@ function Home() {
       </div>
 
       <footer>
-        <div className="flex flex-col gap-3">
-          <p className="font-mono text-xs text-gray-400 uppercase tracking-widest">
+        <div className="flex flex-col gap-4">
+          <p className="text-xs text-gray-400 uppercase tracking-widest">
             Connect
           </p>
           <div className="flex gap-8">
