@@ -62,7 +62,7 @@ function Home() {
                 <motion.div key={project.title} variants={cardVariants}>
                   {project.status === "WIP" ? (
                     <div className="flex flex-col gap-2 p-4 md:p-6 bg-white shadow-sm border border-gray-100 rounded-2xl">
-                      <div className="flex items-center justify-between">
+                      <div className="flex items-start justify-between">
                         <h3 className="md:text-lg capitalize font-medium">
                           {project.title}{" "}
                           <span className="text-gray-400 font-normal">
@@ -85,7 +85,7 @@ function Home() {
                       to={project.link}
                       className="md:text-lg flex flex-col gap-2 p-4 md:p-6 bg-white shadow-sm border border-gray-100 rounded-2xl hover:shadow-md transition-shadow duration-300"
                     >
-                      <div className="flex items-center justify-between">
+                      <div className="flex items-start justify-between">
                         <h3 className="md:text-lg capitalize font-medium">
                           {project.title}{" "}
                           <span className="text-gray-400 font-normal">
