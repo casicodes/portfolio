@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.card {
+  box-shadow: 0 0 0 1px #f1f1f0, 0 1px 2px #cdcdcd52, 0 3px 3px #d6d5d43d,
+    0 -2px #f0f0efb3 inset;
+}
+.card:hover {
+  box-shadow: 0 0 0 1px #f0f0ef, 0 1px 2px #d4d4d300, 0 3px 3px #d3d3d200,
+    0 -2px #f4f4f400 inset;
+}
 header a,
 footer a {
   text-decoration-line: underline;
