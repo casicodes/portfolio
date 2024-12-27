@@ -46,6 +46,7 @@ function Home() {
           </div>
         </div>
       </header>
+
       <div className="flex flex-col gap-6">
         <p className="text-xs text-gray-400 uppercase tracking-widest">
           Projects
@@ -126,12 +127,21 @@ function Home() {
             >
               Email
             </a>
+
             <a
               href="https://www.linkedin.com/in/abhishekkc/"
               className="md:text-lg font-medium"
             >
               Linkedin
             </a>
+
+            <a
+              href="https://github.com/casicodes"
+              className="md:text-lg font-medium"
+            >
+              Github
+            </a>
+
             <a
               href="https://drive.google.com/file/d/1wfwL_ZnZ_bUw_1md56VBe8LyUcnBCWIR/view?usp=sharing"
               className="md:text-lg font-medium"
