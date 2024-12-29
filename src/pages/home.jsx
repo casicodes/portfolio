@@ -62,7 +62,7 @@ function Home() {
               {projects.map((project) => (
                 <motion.div key={project.title} variants={cardVariants}>
                   {project.status === "WIP" ? (
-                    <div className="flex flex-col gap-2 p-4 md:p-6 bg-white card rounded-2xl transition duration-300">
+                    <div className="flex flex-col gap-2 p-4 md:p-6 bg-white card rounded-2xl transition duration-300 cursor-not-allowed">
                       <div className="flex items-start justify-between">
                         <h3 className="md:text-lg capitalize font-medium">
                           {project.title}{" "}
