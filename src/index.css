@@ -28,7 +28,7 @@
   pointer-events: none;
   z-index: -1;
   filter: brightness(1);
-} */
+}
 @keyframes noise-animation {
   0% {
     background-position: 0 0;
@@ -36,7 +36,7 @@
   100% {
     background-position: 100% 100%;
   }
-}
+} */
 header a,
 footer a {
   text-decoration-line: underline;
