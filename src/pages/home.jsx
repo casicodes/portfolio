@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom";
-import { MoveUpRight, ArrowRight } from "lucide-react";
+import { MoveUpRight } from "lucide-react";
 import projects from "../data/projects.json";
 import { motion, AnimatePresence } from "framer-motion";
+import { playClickSound } from "../utils/audioUtils.js";
+
 function Home() {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15, // Stagger effect
+        staggerChildren: 0.15,
       },
     },
   };
+
   const cardVariants = {
     hidden: { opacity: 0, y: 10 },
     visible: {
@@ -20,6 +23,7 @@ function Home() {
       transition: { duration: 0.4, ease: "easeOut" },
     },
   };
+
   return (
     <AnimatePresence>
       <motion.div
@@ -44,6 +48,7 @@ function Home() {
                 Software designer focused on the intersection of design, UI
                 development and micro-interactions to make products feel alive.
               </motion.p>
+
               <motion.p
                 variants={cardVariants}
                 className="text-gray-500 md:text-lg"
@@ -75,7 +80,10 @@ function Home() {
                 {projects.map((project) => (
                   <motion.div key={project.title} variants={cardVariants}>
                     {project.status === "WIP" ? (
-                      <div className="flex flex-col gap-2 p-4 md:p-6 bg-white card rounded-2xl transition duration-300 cursor-not-allowed">
+                      <div
+                        onClick={playClickSound}
+                        className="flex flex-col gap-2 p-4 md:p-6 bg-white card rounded-2xl transition duration-300 cursor-not-allowed"
+                      >
                         <div className="flex items-start justify-between">
                           <h3 className="md:text-lg capitalize font-medium">
                             {project.title}{" "}
@@ -97,6 +105,7 @@ function Home() {
                     ) : (
                       <Link
                         to={project.link}
+                        onClick={playClickSound}
                         className="md:text-lg flex flex-col gap-2 p-4 md:p-6 bg-white card rounded-2xl transition duration-300"
                       >
                         <div className="flex items-start justify-between">
@@ -131,6 +140,7 @@ function Home() {
               </motion.p>
               <motion.div variants={cardVariants} className="flex gap-8">
                 <a
+                  onClick={playClickSound}
                   href="mailto:sendtokcabhi@gmail.com"
                   className="md:text-lg font-medium"
                 >
@@ -138,6 +148,7 @@ function Home() {
                 </a>
 
                 <a
+                  onClick={playClickSound}
                   href="https://www.linkedin.com/in/abhishekkc/"
                   className="md:text-lg font-medium"
                 >
@@ -145,6 +156,7 @@ function Home() {
                 </a>
 
                 <a
+                  onClick={playClickSound}
                   href="https://github.com/casicodes"
                   className="md:text-lg font-medium"
                 >
@@ -152,6 +164,7 @@ function Home() {
                 </a>
 
                 <a
+                  onClick={playClickSound}
                   href="https://drive.google.com/file/d/1wfwL_ZnZ_bUw_1md56VBe8LyUcnBCWIR/view?usp=sharing"
                   className="md:text-lg font-medium"
                 >

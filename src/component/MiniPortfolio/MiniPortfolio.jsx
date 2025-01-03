@@ -8,7 +8,6 @@ import {
   Info,
   ArrowLeft,
   BriefcaseBusiness,
-  ArrowDownToLine,
 } from "lucide-react";
 import p1 from "../../assets/3-1.png";
 import p2 from "../../assets/2-3.png";
