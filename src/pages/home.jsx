@@ -110,7 +110,7 @@ function Home() {
                           <MoveUpRight size={20} className="text-gray-400" />
                         </div>
                         <div className="flex flex-col gap-4">
-                          <p className="md:text-lg text-gray-500 font-normal">
+                          <p className="md:text-lg text-gray-500">
                             {project.description}
                           </p>
                         </div>

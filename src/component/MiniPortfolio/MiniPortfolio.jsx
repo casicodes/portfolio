@@ -241,7 +241,7 @@ function MiniPortfolio() {
                       layout
                       className="h-[48px] flex flex-col justify-center"
                     >
-                      <p className="text-xl font-medium leading-tight">
+                      <p className="text-lg font-medium leading-tight">
                         Abhishek KC
                       </p>
                       <h1 className="text-gray-500">Software Designer</h1>
