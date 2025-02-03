@@ -2,6 +2,7 @@ import "./App.css";
 import Home from "./pages/home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Motion from "./pages/motion";
+import AmrMobile from "./pages/amr-mobile";
 import ScrollToTop from "./ScrollToTop";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/motion" element={<Motion />} />
+          <Route path="/amr-mobile" element={<AmrMobile />} />
         </Routes>
       </Router>
     </main>
