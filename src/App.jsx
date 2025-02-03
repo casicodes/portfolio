@@ -6,7 +6,7 @@ import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
-    <main className="px-4 py-24 max-w-[600px] mx-auto">
+    <main className="px-4 py-24 max-w-[620px] mx-auto">
       {/* <div className="noise-bg"></div> */}
       <Router>
         <ScrollToTop />

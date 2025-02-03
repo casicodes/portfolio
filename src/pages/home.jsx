@@ -45,23 +45,15 @@ function Home() {
                 variants={cardVariants}
                 className="text-gray-500 md:text-lg"
               >
-                Software designer focused on the intersection of design, UI
-                development and micro-interactions to make products feel alive.
-              </motion.p>
-
-              <motion.p
-                variants={cardVariants}
-                className="text-gray-500 md:text-lg"
-              >
-                Currently at{" "}
+                Software designer at{" "}
                 <a
                   href="https://www.lyrebirdhealth.com/au"
                   className="text-gray-800 font-medium"
                 >
                   Lyrebird Health
-                </a>
-                , shaping the future of healthcare by crafting experiences that
-                improve clinical workflows.
+                </a>{" "}
+                — extending human life by crafting software that helps doctors
+                focus on patient care, not paperwork.
               </motion.p>
             </motion.div>
           </motion.div>
