@@ -8,11 +8,13 @@ import MultiLevelAction from "../component/MultiLevelAction/MultiLevelAction";
 import Chatgpt from "../component/Chatgpt/Chatgpt";
 import NewTab from "../component/NewTab/NewTab";
 import SheetAnimation from "../component/SheetAnimation/SheetAnimation";
+import ModalUI from "../component/ModalUI/ModalUI";
 
 function Motion() {
   return (
     <div className="flex flex-col gap-20 text-left">
       <PageTitle />
+      <ModalUI />
       <MiniPortfolio />
       <Chatgpt />
       <ContextMenu />
