@@ -1,4 +1,4 @@
-const clickSound = new Audio("/click.mp3");
+const clickSound = new Audio("/click_sound.mp3");
 const isMobileDevice = () => {
   return /Mobi|Android/i.test(navigator.userAgent);
 };
