@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { X } from "lucide-react";
 
 const ModalUI = () => {
-  const [status, setStatus] = useState("initial"); // initial, learning, updating, done
+  const [status, setStatus] = useState("initial");
+  // initial, learning, updating, done
 
   const handleLearnClick = () => {
     setStatus("Learning from your update");
@@ -16,8 +18,8 @@ const ModalUI = () => {
         setTimeout(() => {
           setStatus("initial");
         }, 3000);
-      }, 6000);
-    }, 6000);
+      }, 4000);
+    }, 4000);
   };
 
   const getStatusText = () => {
@@ -30,7 +32,7 @@ const ModalUI = () => {
             initial={{ y: 8, x: 0 }}
             animate={{ y: 0, x: 0 }}
             transition={{
-              duration: 0.5,
+              duration: 1,
               type: "spring",
             }}
             className="text-gray-600 text-base font-medium shimmer"
@@ -45,10 +47,10 @@ const ModalUI = () => {
             initial={{ y: 8, x: 0 }}
             animate={{ y: 0, x: 0 }}
             transition={{
-              duration: 0.5,
+              duration: 0.7,
               type: "spring",
             }}
-            className="group text-sm py-[5px] shadow-sm hover:shadow-md border transition-shadow border-stone-200 rounded-md flex justify-center items-center gap-1 normal-case px-3 text-primary font-medium w-full"
+            class="text-white items-center justify-center text-sm bg-green-600 px-4 py-2 flex rounded-md hover:bg-green-700 border border-green-600 w-full"
           >
             All set
           </motion.button>
@@ -70,17 +72,18 @@ const ModalUI = () => {
         <div className="border-stone-200 border w-[400px] bg-gray-100 rounded-xl flex flex-col justify-between">
           <div className="flex items-start flex-col gap-4">
             <div className="flex flex-col w-full">
-              <div className="flex flex-row px-[16px] py-[12px] rounded-t-lg">
+              <div className="flex flex-row px-[16px] py-[12px] rounded-t-xl justify-between items-center bg-gray-100">
                 <p className="m-0 font-medium text-base p-0">
                   Do you want us to learn these changes?
                 </p>
+                <X size={20} strokeWidth={1.5} />
               </div>
               <div className="flex flex-row px-[16px] py-[16px] bg-white rounded-t-lg shadow-[0_0_4px_rgba(0,0,0,0.15)]">
                 <ul className="list-disc list-inside text-[13px] text-gray-600 w-full">
-                  <li className="text-sm flex items-center gap-2 mb-2 last:mb-0">
-                    <div className="flex-shrink-0 w-6 h-6 bg-green-50 rounded-full flex items-center justify-center">
+                  <li className="text-sm flex items-center gap-1 mb-2 last:mb-0">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center">
                       <svg
-                        className="w-4 h-4 text-green-600"
+                        className="w-4 h-4 "
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -93,10 +96,10 @@ const ModalUI = () => {
                     </div>
                     Highlight critical financial updates.
                   </li>
-                  <li className="text-sm flex items-center gap-2 mb-2 last:mb-0">
-                    <div className="flex-shrink-0 w-6 h-6 bg-green-50 rounded-full flex items-center justify-center">
+                  <li className="text-sm flex items-center gap-1 mb-2 last:mb-0">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center">
                       <svg
-                        className="w-4 h-4 text-green-600"
+                        className="w-4 h-4 "
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -113,19 +116,20 @@ const ModalUI = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row min-h-[59px] gap-2 border-t px-[16px] py-[12px] bg-white rounded-b-xl items-center justify-between">
+          <div className="flex flex-row min-h-[63px] gap-2 border-t px-[16px] py-[12px] bg-white rounded-b-xl items-center justify-between">
             <AnimatePresence mode="wait">
               {status === "initial" ? (
                 <>
-                  <button className="group text-sm py-[5px] shadow-sm hover:shadow-md border transition-shadow border-stone-200 rounded-md flex justify-center items-center gap-1 normal-case px-3 text-primary font-medium">
+                  <button className="text-sm h-[38px] px-4 py-2 shadow-sm hover:shadow-md border transition-shadow border-stone-200 rounded-md flex">
                     Ignore
                   </button>
-                  <button
+                  <motion.button
+                    whileTap={{ scale: 0.98 }}
                     onClick={handleLearnClick}
-                    className="text-white text-sm bg-green-600 px-4 py-[7px] flex items-center rounded-md hover:bg-green-700"
+                    className="text-white h-[38px] text-sm bg-green-600 px-4 py-2 flex rounded-md hover:bg-green-700  focus:bg-green-800 focus:outline-green-800"
                   >
                     Help AI learn
-                  </button>
+                  </motion.button>
                 </>
               ) : (
                 <>{getStatusText()}</>
