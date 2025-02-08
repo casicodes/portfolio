@@ -126,7 +126,7 @@ const ModalUI = () => {
                   <motion.button
                     whileTap={{ scale: 0.98 }}
                     onClick={handleLearnClick}
-                    className="text-white h-[38px] text-sm bg-green-600 px-4 py-2 flex rounded-md hover:bg-green-700  focus:bg-green-800 focus:outline-green-800"
+                    className="text-white h-[38px] text-sm bg-green-600 px-4 py-2 flex rounded-md hover:bg-green-700  focus:bg-green-800 focus:outline-green-800 items-center"
                   >
                     Help AI learn
                   </motion.button>
