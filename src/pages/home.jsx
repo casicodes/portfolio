@@ -52,8 +52,8 @@ function Home() {
                 >
                   Lyrebird Health
                 </a>{" "}
-                — extending human life by crafting software that helps doctors
-                focus on patient care, not paperwork.
+                — extending human life by crafting product that helps doctors
+                focus more on patient care, not paperwork.
               </motion.p>
             </motion.div>
           </motion.div>
@@ -97,6 +97,7 @@ function Home() {
                     ) : (
                       <Link
                         to={project.link}
+                        whileHover={{ scale: 0.98 }}
                         onClick={playClickSound}
                         className="md:text-lg flex flex-col gap-2 p-4 md:p-6 bg-white card rounded-2xl transition duration-300"
                       >
