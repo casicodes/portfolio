@@ -68,7 +68,7 @@ const ModalUI = () => {
         </h1>
         <p className="text-gray-500">Rethinking confirmation flow</p>
       </div>
-      <div className="playground-area rounded-2xl bg-white border-dashed border border-gray-200 gap-4 flex flex-col items-center justify-start">
+      <div className="playground-area rounded-2xl bg-white border border-gray-100 gap-4 flex flex-col items-center justify-start">
         <div className="border-stone-200 border w-[320px] md:w-[400px] bg-gray-100 rounded-xl flex flex-col justify-between">
           <div className="flex items-start flex-col gap-4">
             <div className="flex flex-col w-full">

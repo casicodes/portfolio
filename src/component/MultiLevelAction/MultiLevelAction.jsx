@@ -184,7 +184,7 @@ function MultiLevelAction() {
           by Benji Taylor, and loved it so much that I decided to recreate it.
         </p>
       </div>
-      <div className="playground-area rounded-2xl h-[491px] bg-white border-dashed border border-gray-200 gap-4 flex flex-col items-center justify-end">
+      <div className="playground-area rounded-2xl h-[491px] bg-white border border-gray-100 gap-4 flex flex-col items-center justify-end">
         <AnimatePresence>
           <div className="flex items-center justify-center">
             <div className="flex items-end ">

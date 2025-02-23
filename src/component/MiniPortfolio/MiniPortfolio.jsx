@@ -55,7 +55,7 @@ function MiniPortfolio() {
           Inspired by Apple’s Dynamic Island for its use of minimal real estate.
         </p>
       </div>
-      <div className="playground-area rounded-2xl min-h-[500px] bg-white border-dashed border border-gray-200 gap-4 flex flex-col items-center justify-center">
+      <div className="playground-area rounded-2xl min-h-[500px] bg-white border border-gray-100 gap-4 flex flex-col items-center justify-center">
         <AnimatePresence mode="wait" initial={false}>
           {state.work ? (
             <motion.div

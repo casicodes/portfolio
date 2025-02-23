@@ -18,7 +18,7 @@ function MicroAnimation() {
           .
         </p>
       </div>
-      <div className="playground-area rounded-2xl min-h-60 bg-white border-dashed border border-gray-200 flex items-center justify-center">
+      <div className="playground-area rounded-2xl min-h-60 bg-white border border-gray-100 flex items-center justify-center">
         <div className="text-center flex flex-col items-center gap-3 max-w-64">
           <div className="icon-wrapper relative flex">
             <svg
