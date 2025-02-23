@@ -158,7 +158,7 @@ function Home() {
 
                 <a
                   onClick={playClickSound}
-                  href="https://drive.google.com/file/d/1wfwL_ZnZ_bUw_1md56VBe8LyUcnBCWIR/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1FFwb2mFiaLoz3bk3Va9JAg4QaZ87LENJ/view?usp=sharing"
                   className="md:text-lg font-medium"
                 >
                   Resume
