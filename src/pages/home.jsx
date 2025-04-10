@@ -71,7 +71,7 @@ function Home() {
               <div className="flex flex-col gap-y-8">
                 {projects.map((project) => (
                   <motion.div key={project.title} variants={cardVariants}>
-                    {project.status === "WIP" ? (
+                    {project.status === "Archived" ? (
                       <div
                         onClick={playClickSound}
                         className="flex flex-col gap-2 p-4 md:p-6 bg-white card rounded-2xl transition duration-300 cursor-not-allowed"
@@ -79,12 +79,12 @@ function Home() {
                         <div className="flex items-start justify-between">
                           <h3 className="md:text-lg capitalize font-medium">
                             {project.title}{" "}
-                            <span className="text-gray-400 font-normal">
+                            <span className="text-gray-400 font-light">
                               · {project.year}
                             </span>
                           </h3>
-                          <div className="rounded-full tracking-widest bg-amber-50 text-amber-600 px-2 gap-1.5 h-6 flex items-center text-sm font-medium">
-                            <div className="small-circle"></div>
+                          <div className="rounded-full bg-neutral-100 text-neutral-500 px-2 gap-1.5 h-6 flex items-center text-sm">
+                            {/* <div className="small-circle"></div> */}
                             {project.status}
                           </div>
                         </div>
@@ -104,7 +104,7 @@ function Home() {
                         <div className="flex items-start justify-between">
                           <h3 className="md:text-lg capitalize font-medium">
                             {project.title}{" "}
-                            <span className="text-gray-400 font-normal">
+                            <span className="text-gray-400 font-light">
                               · {project.year}
                             </span>
                           </h3>

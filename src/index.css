@@ -123,3 +123,13 @@ footer a:hover {
   z-index: 1;
   right: 0;
 }
+@font-face {
+  font-family: "Conte";
+  src: url("./assets/conte.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tag-line {
+  font-family: "Conte", sans-serif;
+}
